@@ -1,12 +1,42 @@
+#titulo{
+    text-justify: auto;
+    font-size: 2.5rem;
+    padding-left: 30%;
+}
+
+#contenido{
+    text-justify: auto;
+    font-size: 1.5rem;
+}
+
+.navbar{
+    background-color: #65c9ff;
+}
+
+#logo{
+    width: 250px;
+}
 
 #name{
-    color: blue;
-    
+    /* color: #FF6B35;
+    color: #304D6D; */
+    color: #FCAD47;
+    font-weight: bolder;
+    font-size: large;
 }
 
-#description{
-
-}
 #avatar{
     height: 200px;
 }
+
+.full-footer{
+    background-color: #65c9ff;
+}
+
+#titulo{
+    font-weight: bold;
+}
+
+/* body{
+    background-color: gray;
+} */
