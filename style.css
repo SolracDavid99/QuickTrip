@@ -18,8 +18,6 @@
 }
 
 #name{
-    /* color: #FF6B35;
-    color: #304D6D; */
     color: #FCAD47;
     font-weight: bolder;
     font-size: large;
@@ -40,3 +38,29 @@
 /* body{
     background-color: gray;
 } */
+
+
+.transicion:hover #avatar {
+    opacity: 0.3;
+} 
+.transicion:hover .middle {
+    opacity: 1;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background-color: #65c9ff67;
+    color: rgb(0, 0, 0);
+    font-size: .8em ;
+    padding: 10px 10px;
+    border-radius: 15px 50px 30px;
+}
