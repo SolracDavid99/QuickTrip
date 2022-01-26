@@ -30,7 +30,7 @@ function formulario(){
     }
     else{
         console.log("Nombre : "+ nombre + "\nEmail : "+ email + "\nTelefono : " + telefono + "\nTexto : " + texto);
-        sendMail();
+        sendMail(nombre,email,telefono,texto);
         document.getElementsByTagName("input")[0].value = "";
         document.getElementsByTagName("input")[1].value = "";
         document.getElementsByTagName("input")[2].value = "";
@@ -40,17 +40,17 @@ function formulario(){
 }
 
 
-function sendMail(){
+function sendMail(nombre,email,telefono,texto){
     Email.send({
         Host : "smtp.mailtrap.io",
         Username : "ecd9369ddea454",
         Password : "0ee3d7e5988e94",
         To : 'quicktripcontact@gmail.com',
         From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Subject : "Someone contact you!",
+        Body : "Nombre : "+ nombre + "\nEmail : "+ email + "\nTelefono : " + telefono + "\nTexto : " + texto 
     }).then(
-        msg => alert("¡Gracias por contactarnos! En breve nos comunicaremos contigo. :)")
+        alert("¡Gracias por contactarnos! En breve nos comunicaremos contigo. :)")
     );
 
 }
