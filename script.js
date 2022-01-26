@@ -30,11 +30,27 @@ function formulario(){
     }
     else{
         console.log("Nombre : "+ nombre + "\nEmail : "+ email + "\nTelefono : " + telefono + "\nTexto : " + texto);
-        alert("Se ha enviado tu soliticud");
+        sendMail();
         document.getElementsByTagName("input")[0].value = "";
         document.getElementsByTagName("input")[1].value = "";
         document.getElementsByTagName("input")[2].value = "";
         document.getElementsByTagName("textarea")[0].value = "";
     }
     
+}
+
+
+function sendMail(){
+    Email.send({
+        Host : "smtp.mailtrap.io",
+        Username : "ecd9369ddea454",
+        Password : "0ee3d7e5988e94",
+        To : 'quicktripcontact@gmail.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+        msg => alert("¡Gracias por contactarnos! En breve nos comunicaremos contigo. :)")
+    );
+
 }
