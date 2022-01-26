@@ -29,7 +29,7 @@ function formulario(){
         alert("En el campo de telefono no puede haber letras, favor de verificar");
     }
     else{
-        console.log("Nombre : "+ nombre + "\nEmail : "+ email + "\nTelefono : " + telefono + "\nTexxto : " + texto);
+        console.log("Nombre : "+ nombre + "\nEmail : "+ email + "\nTelefono : " + telefono + "\nTexto : " + texto);
         alert("Se ha enviado tu soliticud");
         document.getElementsByTagName("input")[0].value = "";
         document.getElementsByTagName("input")[1].value = "";
