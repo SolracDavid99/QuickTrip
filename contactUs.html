@@ -19,7 +19,10 @@
 <body>
     <!-- Navegation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#"><img id="logo" src="./assets/logo.png"></a>
+        <a class="navbar-brand" href="#"><img id="logo" src="./assets/nuevologo.png">
+            <img id="avion" src="./assets/nuevoavion.png">
+            <div></div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,14 +30,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="./aboutUs.html">About Us</a>
+                    <a class="nav-link text-black" href="./contactUs.html">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="#">Login</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <img id="login" src="./assets/login.png">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Sign in</a>
+                        <a class="dropdown-item" href="#">Sign Up</a>
+                    </div>
                 </li>
-                <li>
-                    <img src="" alt="">
-                </li>
+
             </ul>
         </div>
     </nav>
