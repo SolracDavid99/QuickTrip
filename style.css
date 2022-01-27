@@ -18,6 +18,15 @@
 #logo{
     width: 10rem;
 }
+#login{
+    width: 1.7rem;
+}
+.dropdown-menu {
+    right: 0;
+    left: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+}
 
 body{
     /* background-color: whitesmoke; */
