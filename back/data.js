@@ -48,6 +48,7 @@ module.exports = {
       rating: 2.5,
       numReviews: 198,
       countInStock: 6,
+      about : "Holo"
     },
     {
       _id: '5',
