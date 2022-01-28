@@ -67,4 +67,7 @@ body{
 }
 .card{
     border: none;
+} 
+#portada{
+    border-radius:1rem;
 }
