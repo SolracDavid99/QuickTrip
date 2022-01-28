@@ -1,5 +1,5 @@
 .navbar{
-    background-color: white;
+    background-color: #f8f9fb;
 }
 
 #logo{
@@ -62,4 +62,7 @@ body{
 }
 .container{
     padding-top: 2rem;
+}
+form{
+    font-family: 'Quicksand', sans-serif;
 }
