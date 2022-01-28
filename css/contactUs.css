@@ -58,11 +58,12 @@ body{
     background-color: #f8f9fb;
 }
 #image{
-    width: 40rem;
+    padding-left: 2rem;
 }
 .container{
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 form{
     font-family: 'Quicksand', sans-serif;
+    padding-left: 5rem;
 }
