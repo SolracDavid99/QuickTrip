@@ -61,12 +61,14 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 #category{
-    width: 16rem;
+    width: 15rem;
     height: 18rem;
     border-radius:1rem;
 }
 .card{
     border: none;
+    background-color: #f8f9fb;
+    margin-left: 4rem;
 } 
 #portada{
     border-radius:1rem;
