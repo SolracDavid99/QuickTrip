@@ -66,3 +66,6 @@ body{
 form{
     font-family: 'Quicksand', sans-serif;
 }
+button{
+    padding-bottom: 1rem;
+}
