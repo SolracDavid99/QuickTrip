@@ -59,6 +59,7 @@ body{
 }
 #image{
     padding-left: 2rem;
+    border-radius:1rem;
 }
 .container{
     padding-top: 1rem;
