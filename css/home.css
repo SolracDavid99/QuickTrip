@@ -61,15 +61,20 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 #category{
-    width: 22rem;
+/*    width: 22rem;
+*/
     height: 26rem;
     border-radius:1rem;
+
 }
 .card{
     border: none;
     background-color: #f8f9fb;
-    width: 22rem;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
 }
+
 
 #portada{
     border-radius:1rem;
