@@ -79,3 +79,62 @@ body{
 #portada{
     border-radius:1rem;
 }
+
+.parent-scroll {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 150px;
+    height: 569px;
+}
+
+.container-scroll {
+    position: absolute;
+    width: 1235px;
+    height: 569px;
+    background: #F4E6D6;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.text-scroll {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.first-div-scroll {
+    width: 50%;
+}
+
+.container-images-scroll {
+    position: relative;
+}
+
+.child1 {
+    position: absolute;
+    bottom: 50px;
+    left: 330px;
+}
+
+.child2 {
+    position: absolute;
+    top: -150px;
+    left: 50px;
+}
+
+.child3 {
+    position: absolute;
+    left: 330px;
+    top: 45px;
+}
+
+.image-scroll {
+    width: 219px;
+    height: 283px;
+    object-fit: cover;
+    border-radius: 9px;
+}
