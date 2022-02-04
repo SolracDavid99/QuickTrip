@@ -8,8 +8,8 @@ fetch('http://localhost:5000/api/tours')
     let element = document.getElementById('tourName') ;
     element.innerHTML = `<h1> ${tours[id].name}<h1>`;
     let image = document.getElementById('tourImage') ;
-    image.innerHTML = `<img src=${tours[id].image}  class="img-fluid">`;
-    let about = document.getElementById('aboutTour') ;
+    image.innerHTML = `<img src=${tours[id].image} style="width:10rem height:5rem">`;
+    let about = document.getElementById('aboutTour');
     about.innerHTML = `${tours[id].about}`;
     
 })
