@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/contactUs.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </head>
 <body>
     <!-- Navegation Bar -->
@@ -72,13 +76,27 @@
                     <!-- <small id="emailHelp" class="form-text text-muted">name@example.com</small>  -->
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="PhoneInput" placeholder="Phone">
+                    <input type="text" class="form-control" id="PhoneInput" placeholder="Phone (Optional)">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tell us your comments."></textarea>
+                    <textarea class="form-control" id="CommentsTextArea" rows="3" placeholder="Tell us your comments."></textarea>
                 </div>
                 </form>
                 <button class="btn btn-dark float-right" onclick="formulario()">Submit</button>
+
+                <div class="message">
+                    <div class="success" id="success">¡Thank you for contacting us! We will reach you shortly.
+
+                    </div>
+                    <div class="danger" id="danger">
+                        You have left a required field blank, please check it out.
+                        </div>
+                    <div class="alerts" id="alert1">En el campo de nombre no puede haber numeros, favor de verificar</div>
+                    <div class="alerts" id="alert2">Verifica tu email, favor de verificar</div>
+                    <div class="alerts" id="alert3">En el campo de telefono no puede haber letras, favor de verificar</div>
+
+                </div>    
+                
         </div>
     </div>
 </div>
@@ -98,6 +116,10 @@ crossorigin="anonymous"></script>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="/js/mail.js"></script>
+
+<!-- Sweet Alert Script -->
+<!-- <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css"> -->
 
 </body>
 </html>
