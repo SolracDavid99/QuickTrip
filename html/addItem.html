@@ -21,44 +21,7 @@
 
 <body>
     <!-- Navegation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
-        <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo.png">
-            <img id="avion" src="../assets/nuevoavion.png">
-            <div></div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./item.html">Item list</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./addItem.html">Add Item</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./contactUs-v2.html">Contact us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./aboutUs.html">About us</a>
-                </li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                        <div>
-                            <img id="login" src="../assets/login.png">
-                        </div>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Sign in</a>
-                        <a class="dropdown-item" href="#">Sign Up</a>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
+    <div id="navBar"></div>
 
 	<form style="margin-left: 30%;">
 		<div class="form-row">
@@ -91,6 +54,18 @@
 				<input type="text" class="form-control" id="inputCity" placeholder="Ex: Jalisco,CDMX,Quintana Roo">
 			</div>
 		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label for="inputRating" id="contenido">Rating</label>
+				<input type="text" class="form-control" id="inputRating" placeholder="Ex: 0.0-5.0">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12">
+				<label for="inputReviews" id="contenido">Reviews</label>
+				<input type="text" class="form-control" id="inputReviews" placeholder="Ex: 0-1000">
+			</div>
+		</div>
 		<div class="form-group">
 			<label for="inputImage" id="contenido">Image URL</label>
 			<input type="text" class="form-control" id="inputAddress2" placeholder="Paste the image URL">
@@ -112,6 +87,7 @@
 
 	<script src="/js/addItem.js"></script>
 	<script src="./app.js"></script>
+	
 </body>
 
 </html>

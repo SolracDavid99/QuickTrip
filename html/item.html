@@ -17,44 +17,7 @@
 </head>
 <body>
     <!-- Navegation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
-        <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo.png">
-            <img id="avion" src="../assets/nuevoavion.png">
-            <div></div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./item.html">Item list</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./addItem.html">Add Item</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./contactUs-v2.html">Contact us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black" href="./aboutUs.html">About us</a>
-                </li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                        <div>
-                            <img id="login" src="../assets/login.png">
-                        </div>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Sign in</a>
-                        <a class="dropdown-item" href="#">Sign Up</a>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
+    <div id="navBar"></div>
 
 <!-- Tour card structure-->
 
@@ -62,12 +25,12 @@
 
 <!-- Script for bulding the cards for the using the data from the tours database -->
 <script>
+var cards = ''
 
 function buildCards () {
     fetch('http://localhost:5000/api/tours')
 .then(respuesta => respuesta.json())
 .then(tours => {
-    let cards = ''
     for (let i = 0; i < tours.length; i++) {
         cards += 
         `<div class="container-fluid"> 
@@ -82,7 +45,7 @@ function buildCards () {
                                 <p class="card-text" id="aboutTour"><b>Location:</b> ${tours[i].location}     
                                 <b> Category: </b>${tours[i].category}</p>
                                 <p class="card-text" id="aboutTour">${tours[i].about}</p> 
-                                <p class="card-text">${tours[i].price}</p>
+                                <p class="card-text">${tours[i].price} MXN</p>
                                 <div>
 
                                     <div class="dropdown">
@@ -109,7 +72,57 @@ function buildCards () {
 })
 .catch(err=>console.log(err))
 }
+
+// window.onload = buildCardsSessionStorage;
+function buildCardsSessionStorage(){
+
+    var newTour = JSON.parse(sessionStorage.getItem("id"));
+    console.log (newTour.tourName);
+    
+    cards += 
+        `<div class="container-fluid"> 
+            <div class="card mb-3">
+                    <div class="row no-gutters">    
+                        <div class="col-md-4">  
+                            <img id="tourImage" src="${newTour.imageUrl}" alt="..." class="img-fluid">
+                        </div>
+                        <div class="col-md-8">  
+                            <div class="card-body"> 
+                                <h5 class="card-title" id="tourName">${newTour.tourName}</h5>    
+                                <p class="card-text" id="aboutTour"><b>Location:</b> ${newTour.state}     
+                                <b> Category: </b>${newTour.category}</p>
+                                <p class="card-text" id="aboutTour">${newTour.description}</p> 
+                                <p class="card-text">${newTour.price} MXN</p>
+                                <div>
+
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Number of places
+                                        </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">1</a>
+                                                <a class="dropdown-item" href="#">2</a>
+                                                <a class="dropdown-item" href="#">3</a>
+                                                <a class="dropdown-item" href="#">4</a>
+                                            </div>
+                                    </div>
+
+                                </div>
+                                <p class="card-text"><small class="text-muted">Rating: ${newTour.rating} by ${newTour.reviews} reviews  </small></p>
+                            </div>
+                        </div>  
+                    </div> 
+            </div>
+        </div>`
+    
+    document.getElementById('cards').innerHTML = cards;
+
+}
+
+
 buildCards();
+buildCardsSessionStorage();
+
+
 
 </script>
 <script src="./app.js"></script> <!--Link to app.js with nav bar render-->
@@ -120,5 +133,6 @@ crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
 crossorigin="anonymous"></script>
+
 </body>
 </html>
