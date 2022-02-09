@@ -135,10 +135,12 @@ body{
     width: 219px;
     height: 283px;
     object-fit: cover;
-    border-radius: 9px;
+    border-radius: 1rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #destinations{
@@ -154,6 +156,5 @@ body{
     align-items: center;
     /*padding-left: 40px;
     padding-right: 40px;*/
-
 }
 
