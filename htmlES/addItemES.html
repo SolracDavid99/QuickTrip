@@ -11,7 +11,7 @@
 
 	<link rel="stylesheet" href="/css/addItemStyle.css">
 
-	<title>QuickTrip - Add Tour</title>
+	<title>QuickTrip - Añadir experiencia</title>
 
 	<!-- Fuente -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,16 +33,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="./item.html">Item list</a>
+                    <a class="nav-link text-black" href="./item.html">Lista de experiencias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="./addItem.html">Add Item</a>
+                    <a class="nav-link text-black" href="./addItem.html">Agregar experiencia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="./contactUs-v2.html">Contact us</a>
+                    <a class="nav-link text-black" href="./contactUs-v2.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="./aboutUs.html">About us</a>
+                    <a class="nav-link text-black" href="./aboutUs.html">Sobre nosotros</a>
                 </li>
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -51,8 +51,8 @@
                         </div>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Sign in</a>
-                        <a class="dropdown-item" href="#">Sign Up</a>
+                        <a class="dropdown-item" href="#">Iniciar sesión</a>
+                        <a class="dropdown-item" href="#">Registrate</a>
                     </div>
                 </li>
 
@@ -63,43 +63,43 @@
 	<form style="margin-left: 30%;">
 		<div class="form-row">
 			<div class="form-group col-md-8">
-				<label for=""><h1 id="titulo">Let's explore more places!</h1></label>
+				<label for=""><h1 id="titulo">¡Vamos a nuevos lugares!</h1></label> <!-- Con esta opción el texto se divide en dos lineas ¡Vamos a explorar más lugares!> -->
 			</div>
 			<div class="form-group col-md-12">
-				<label for="inputEmail4" id="contenido">Tour name</label>
-				<input type="email" class="form-control" id="inputEmail4" placeholder="Tour name">
+				<label for="inputEmail4" id="contenido">Nombre de la experiencia:</label>
+				<input type="email" class="form-control" id="inputEmail4" placeholder="Nombre de la experiencia">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="inputAddress" id="contenido">Category</label>
-			<label for="exampleFormControlSelect1" id="contenido">Example select</label>
+			<label for="inputAddress" id="contenido">Categoria:</label>
+			<label for="exampleFormControlSelect1" id="contenido"></label>
 			<select class="form-control" id="exampleFormControlSelect1">
 			<!-- <input list="type" class="form-control" id="inputAddress" placeholder="Aqui debe de ir la categoria"> -->
-				<option>Gastronomic</option>
-				<option>Night Life</option>
+				<option>Gastronómica</option>
+				<option>Vida nocturna</option>
 				<option>Cultural</option>
-				<option>Recreational</option>
+				<option>Recreativa</option>
 			</select>
 		</div>
 		<div class="form-group">
-			<label for="inputAddress2" id="contenido">Price</label>
-			<input type="text" class="form-control" id="inputAddress2" placeholder="Cost of the tour">
+			<label for="inputAddress2" id="contenido">Precio:</label>
+			<input type="text" class="form-control" id="inputAddress2" placeholder="Costo que tendrá la experiencia">
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-12">
-				<label for="inputCity" id="contenido">State</label>
-				<input type="text" class="form-control" id="inputCity" placeholder="Ex: Jalisco,CDMX,Quintana Roo">
+				<label for="inputCity" id="contenido">Estado:</label>
+				<input type="text" class="form-control" id="inputCity" placeholder="Jalisco,  CDMX,  Quintana Roo">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="inputImage" id="contenido">Image URL</label>
-			<input type="text" class="form-control" id="inputAddress2" placeholder="Paste the image URL">
+			<label for="inputImage" id="contenido">Imagen URL:</label>
+			<input type="text" class="form-control" id="inputAddress2" placeholder="Aquí va la dirección URL de la imagen">
 		</div>
 		<div class="form-group">
-			<label for="DescriptionInput" id="contenido">Description:</label>
-			<textarea class="form-control" id="DescriptionInput" rows="4" placeholder="What's the description of the tour?"></textarea>
+			<label for="DescriptionInput" id="contenido">Descripción:</label>
+			<textarea class="form-control" id="DescriptionInput" rows="4" placeholder="Describe tu experiencia de manera breve y atractiva"></textarea>
 		</div>	
-		<button type="submit" class="btn btn-primary" onclick="agregarItem()" id="contenido">Submit</button>
+		<button type="submit" class="btn btn-primary" onclick="agregarItem()" id="contenido">Enviar</button>
 	</form>
 
 
