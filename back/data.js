@@ -57,11 +57,12 @@ module.exports = {
       location: 'Riviera Maya',
       category: 'Nightlife',
       image: "https://media-cdn.tripadvisor.com/media/photo-s/07/81/72/67/kanha-jungle-lodge.jpg",
+      price: "2,200 mxn pp",
       brand: '-',
       rating: 2.5,
       numReviews: 198,
       countInStock: 6,
-      about : "Holo"
+      about : "Join us for an intimate dinner party & mezcal tasting in our private jungle garden in the center of Tulum Pueblo! Everyone is welcome to our garden where we will prepare a 3-course dinner cooked on the fire paired with 1.5 ounce tastings of five artisanal, small-batch mezcals sourced from different regions around the country. We create a new dinner menu for every tasting based on any allergies or dietary restrictions. This experience is best for adventurous eaters as we do not disclose the menu beforehand. For an idea of what we typically serve, refer to our photos! Throughout the dinner, we will talk a little bit about the differences between mezcal and tequila, the process of producing mezcal, what to look for when purchasing mezcal & why it has become so popular in the past few years. Most importantly, we’ll have a good time sharing food & drinks, and creating new experiences with great people."
     },
     {
       _id: '6',
@@ -74,7 +75,7 @@ module.exports = {
       rating: 3.5,
       numReviews: 89,
       countInStock: 6,
-      about :"Join us for an intimate dinner party & mezcal tasting in our private jungle garden in the center of Tulum Pueblo! Everyone is welcome to our garden where we will prepare a 3-course dinner cooked on the fire paired with 1.5 ounce tastings of five artisanal, small-batch mezcals sourced from different regions around the country. We create a new dinner menu for every tasting based on any allergies or dietary restrictions. This experience is best for adventurous eaters as we do not disclose the menu beforehand. For an idea of what we typically serve, refer to our photos! Throughout the dinner, we will talk a little bit about the differences between mezcal and tequila, the process of producing mezcal, what to look for when purchasing mezcal & why it has become so popular in the past few years. Most importantly, we’ll have a good time sharing food & drinks, and creating new experiences with great people."
+      about :"One of the Mexican cities with the greatest artisan tradition, but above all a place where the secrets of artisanal techniques in ceramics and pottery are amalgamated in beautiful and innovative decorative handicraft pieces worthy of admiration.<br>Its charming gastronomy, seasoned with the warmth of home and also its high cuisine that the different places have will give you a fantastic experience.<br>It has beautiful tourist attractions that will lead you to discover something more than the showcases of fine crafts that we are sure you will love."
     },
     {
       _id: '7',
@@ -95,7 +96,7 @@ module.exports = {
       location: 'CDMX',
       category: 'Nightlife',
       image: 'https://imagenes.razon.com.mx/files/image_940_470/uploads/2020/10/17/5f8b3042f258e.jpeg',
-      price: "1200 mxn pp",
+      price: "1,200 mxn pp",
       brand: '-',
       rating: 4.5,
       numReviews: 45,

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="35x35" href="./assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="35x35" href="../assets/favicon.png">
     <title>QuickTrip</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="../css/home.css">
 
 <!-- Fuente -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,43 @@
 <body>
 
     <!-- Navegation Bar -->
-    <div id="navBar"></div>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+            <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo.png">
+                <img id="avion" src="../assets/nuevoavion.png">
+                <div></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./item.html">Item list</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./addItem.html">Add Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./contactUs-v2.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./aboutUs.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <div>
+                                <img id="login" src="../assets/login.png">
+                            </div>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Sign in</a>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
     <!-- Title -->
     <div class="container-fluid">
@@ -31,7 +67,7 @@
                 <p class="lead" id="contenido" style="font-size: 2rem;">Are you ready to go for an adventure? Make your day extraordinaire?</p>
             </div>
             <div class="col-md-6">
-                <img id="portada" class="img-fluid float-right" src="/assets/img/home/cancun.jpeg" alt="">
+                <img id="portada" class="img-fluid float-right" src="../assets/img/home/cancun.jpeg" alt="">
             </div>
         </div>
     </div>
@@ -49,7 +85,7 @@
         <div class="row">
             <div class="col-md d-flex justify-content-center">
                 <div class="card.mx-auto">
-                    <img id="category" class="card-img-top" src="/assets/img/home/food.jpg" alt="Card image cap">
+                    <img id="category" class="img-fluid" src="../assets/img/home/food.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Culinary</p>
                     </div>
@@ -57,7 +93,7 @@
             </div>
             <div class="col-md d-flex justify-content-center">
                 <div class="card">
-                    <img class="card-img-top" id="category"src="/assets/img/home/cabañas.jpeg" alt="Card image cap">
+                    <img class="img-fluid" id="category"src="../assets/img/home/cabañas.jpeg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Cultural</p>
                     </div>
@@ -65,7 +101,7 @@
             </div>
             <div class="col-md d-flex justify-content-center">
                 <div class="card">
-                    <img class="card-img-top" id="category" src="/assets/img/home/piramide.jpg" alt="Card image cap">
+                    <img class="img-fluid" id="category" src="../assets/img/home/piramide.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Outdoors</p>
                     </div>
@@ -73,7 +109,7 @@
             </div>
             <div class="col-md d-flex justify-content-center">
                 <div class="card">
-                    <img class="card-img-top" id="category" src="/assets/img/home/nightlife.jpg" alt="Card image cap">
+                    <img class="img-fluid" id="category" src="../assets/img/home/nightlife.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Nightlife</p>
                     </div>
@@ -90,13 +126,13 @@
             </div>
             <div class="container-images-scroll">
                 <div class="child1">
-                    <img src="/assets/img/home/tequila.jpg" alt="tequila" class="image-scroll">
+                    <img src="../assets/img/home/tequila.jpg" alt="tequila" class="image-scroll">
                 </div>
                 <div class="child2">
-                    <img src="/assets/img/home/valladolid.jpg" alt="valladolid" class="image-scroll">
+                    <img src="../assets/img/home/valladolid.jpg" alt="valladolid" class="image-scroll">
                 </div>
                 <div class="child3">
-                    <img src="/assets/img/home/piramide.jpg" alt="piramide" class="image-scroll">
+                    <img src="../assets/img/home/piramide.jpg" alt="piramide" class="image-scroll">
                 </div>
             </div>
         </div>
@@ -104,18 +140,18 @@
 
     <div class="container-fluid">
         <div class="row" id="destinations" >
-            <div class="col-md-6 ">
-                <p id="encabezado" class="display-4">Check out the destinations we have ready for you!</p>
+            <div class="col-md-6">
+                <p id="encabezado">Check out the destinations we have ready for you!</p>
             </div>
             <div class="col-md-3">
-                <img src="/assets/img/home/tequila.jpg" alt="tequila" class="image-scroll">
+                <img src="../assets/img/home/tequila.jpg" alt="tequila" class="image-scroll">
                 <br><br>
             </div>
             <div class="col-md-3">
-                <img src="/assets/img/home/hacienda.jpg" alt="hacienda" class="image-scroll">
+                <img src="../assets/img/home/hacienda.jpg" alt="hacienda" class="image-scroll">
                 
                 <br><br>
-                <img src="/assets/img/home/valladolid.jpg" alt="valladolid" class="image-scroll">
+                <img src="../assets/img/home/valladolid.jpg" alt="valladolid" class="image-scroll">
             </div>
         </div>
     </div>

@@ -123,3 +123,6 @@ body{
         margin-right: 1.5rem;
         margin-bottom: 1rem;
     }
+    #frontImage{
+        border-radius: 1rem;
+    }

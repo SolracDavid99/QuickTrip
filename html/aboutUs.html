@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="35x35" href="/assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="35x35" href="../assets/favicon.png">
     <title>QuickTrip</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/aboutUs.css">
+    <link rel="stylesheet" href="../css/aboutUs.css">
 
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,44 @@
 <body>
 
     <!-- Navegation Bar -->
-    <div id="navBar"></div>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+        <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo.png">
+            <img id="avion" src="../assets/nuevoavion.png">
+            <div></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./item.html">Item list</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./addItem.html">Add Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./contactUs-v2.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./aboutUs.html">About us</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <img id="login" src="../assets/login.png">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Sign in</a>
+                        <a class="dropdown-item" href="#">Sign Up</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
     <br>
 
     <div class="container-fluid">
@@ -31,7 +68,7 @@
             <br>
             <div class="row">
                 <div class="col-md ">
-                    <img src="/assets/paperPlanes" class="img-fluid rounded" alt="">
+                    <img src="../assets/paperPlanes" class="img-fluid" id="frontImage" alt="">
                 </div>
                 <div class="col-md">
                     <p id="contenido">QuickTrip is an idea that arose from locals to traveling souls who want to discover new
@@ -52,7 +89,7 @@
             <div class="col-sm text-center">
 
                 <div class="transicion">
-                    <img src="/assets/avatars/background/Alonso.png" id="avatar" alt="Avatar Alonso">
+                    <img src="../assets/avatars/background/Alonso.png" id="avatar" alt="Avatar Alonso">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -60,8 +97,8 @@
 
                 <br><br>
                 <p id="name">Alonso Rodriguez</p>
-                <a href="https://github.com/octopusmorgan" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/alonso-rodriguez-480862219/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/octopusmorgan" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/alonso-rodriguez-480862219/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hi this is Alonso, one of QuickTrip’s <b>Product Owner and Back-End developer’s.</b>
                     Making the best analysis of your experiences and giving you support !
@@ -70,7 +107,7 @@
             <div class="col-sm text-center">
 
                 <div class="transicion">
-                    <img src="/assets/avatars/background/Angel Cardozo Con fondo.png" id="avatar" alt="Avatar Angel">
+                    <img src="../assets/avatars/background/Angel Cardozo Con fondo.png" id="avatar" alt="Avatar Angel">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -78,8 +115,8 @@
 
                 <br><br>
                 <p id="name">Angel Cardozo</p>
-                <a href="https://github.com/AngelLagc" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/angel-cardozo-78bbbb227/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/AngelLagc" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/angel-cardozo-78bbbb227/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hi this is Angel, one of QuickTrip's <b>Front-End developers.</b>
                     Making sure you take one quick look and can’t help but to book your trip experience with us !
@@ -88,7 +125,7 @@
             <div class="col-sm text-center">
 
                 <div class="transicion">
-                    <img src="/assets/avatars/background/Carlos Fregoso Con fondo.png" id="avatar" alt="Avatar Carlos">
+                    <img src="../assets/avatars/background/Carlos Fregoso Con fondo.png" id="avatar" alt="Avatar Carlos">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -96,8 +133,8 @@
 
                 <br><br>
                 <p id="name">Carlos Fregoso</p>
-                <a href="https://github.com/SolracDavid99" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/carlos-fregoso-883660169/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/SolracDavid99" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/carlos-fregoso-883660169/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hi this is Carlos Fregoso, one of QuickTrip’s <b>Back-end developer’s.</b>
                     Making sure that you can always make a reservation with us!
@@ -108,7 +145,7 @@
         <div class="row">
             <div class="col-sm text-center">
                 <div class="transicion">
-                    <img src="/assets/avatars/background/Ernestofondo.png" id="avatar" alt="Avatar Ernesto">
+                    <img src="../assets/avatars/background/Ernestofondo.png" id="avatar" alt="Avatar Ernesto">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -116,8 +153,8 @@
 
                 <br><br>
                 <p id="name">Ernesto Martinez</p>
-                <a href="https://github.com/cernestomtz" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/ernestomartinezrdz/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/cernestomtz" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/ernestomartinezrdz/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hi this is Ernesto, one of QuickTrip’s
                     <b>Back-End developer’s.</b> Making the booking of your trip and ensuring your fun !
@@ -126,7 +163,7 @@
             <div class="col-sm text-center">
 
                 <div class="transicion">
-                    <img src="/assets/avatars/background/Jazmín.png" id="avatar" alt="Avatar Jazmin">
+                    <img src="../assets/avatars/background/Jazmín.png" id="avatar" alt="Avatar Jazmin">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -134,8 +171,8 @@
 
                 <br><br>
                 <p id="name">Jazmin Urzua</p>
-                <a href="https://github.com/JazminUR" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/jazm%C3%ADn-urz%C3%BAa-600029228/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/JazminUR" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/jazm%C3%ADn-urz%C3%BAa-600029228/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hi, I'm Jasmine, one of QuickTrip's <b>Front-End developers.</b>
                     Making sure that what you see is exactly what you want, to enjoy with us !</p>
@@ -144,7 +181,7 @@
             <div class="col-sm text-center">
 
                 <div class="transicion">
-                    <img src="/assets/avatars/background/Larissa.png" id="avatar" alt="Avatar Larissa">
+                    <img src="../assets/avatars/background/Larissa.png" id="avatar" alt="Avatar Larissa">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -152,8 +189,8 @@
 
                 <br><br>
                 <p id="name">Larissa de la Vega</p>
-                <a href="https://github.com/Larissadlvi" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/larissa-de-la-vega/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/Larissadlvi" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/larissa-de-la-vega/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hi this is Larissa, one of QuickTrip’s <b>Front-End developer’s.</b>
                     Making sure you like what you see enough to dare and experience Mexico !
@@ -163,7 +200,7 @@
         <div class="row">
             <div class="col-sm text-center">
                 <div class="transicion">
-                    <img src="/assets/avatars/background/avatarPaulo.png" id="avatar" alt="Avatar Paulo">
+                    <img src="../assets/avatars/background/avatarPaulo.png" id="avatar" alt="Avatar Paulo">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -171,8 +208,8 @@
 
                 <br><br>
                 <p id="name">Paulo Covarrubias</p>
-                <a href="https://github.com/Paulo-Cov" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/paulo-covarrubias/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/Paulo-Cov" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/paulo-covarrubias/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hello this is Paulo, one of QuickTrip’s <b>Back-end developer’s.</b>
                     I am sure you will enjoy our tours.
@@ -182,7 +219,7 @@
             <div class="col-sm text-center">
 
                 <div class="transicion">
-                    <img src="/assets/avatars/background/Salvador_con_fondo.png" id="avatar" alt="Avatar Salvador">
+                    <img src="../assets/avatars/background/Salvador_con_fondo.png" id="avatar" alt="Avatar Salvador">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -190,8 +227,8 @@
 
                 <br><br>
                 <p id="name">Salvador Franco</p>
-                <a href="https://github.com/JFranco2021" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/JFranco2021" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hi this is Salvador, one of QuickTrip’s <b>Database developer’s</b>.
                     Making sure that your information is safe with us !
@@ -202,7 +239,7 @@
             <div class="col-sm text-center">
 
                 <div class="transicion">
-                    <img src="/assets/avatars/background/sergio_padilla con fondo.png" id="avatar" alt="Avatar Sergio">
+                    <img src="../assets/avatars/background/sergio_padilla con fondo.png" id="avatar" alt="Avatar Sergio">
                     <div class="middle">
                         <button class="text">Want to know me more!</button>
                     </div>
@@ -210,8 +247,8 @@
 
                 <br><br>
                 <p id="name">Sergio Padilla</p>
-                <a href="https://github.com/SergioPadillaA" target="_blank"><img src="/assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
-                <a href="https://www.linkedin.com/in/sergio-padilla-050ab2225/" target="_blank"><img src="/assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://github.com/SergioPadillaA" target="_blank"><img src="../assets/img/394187_github_icon.png" id="icon" alt="Icono contacto"></a>
+                <a href="https://www.linkedin.com/in/sergio-padilla-050ab2225/" target="_blank"><img src="../assets/img/317750_linkedin_icon.png" id="icon" alt="Icono contacto"></a>
                 <p id="description">
                     Hello! This is Sergio, one of QuickTrip’s <b>Back-end developer’s.</b>
                     I hope that you can use this wonderful page to get a tour more fun.

@@ -54,6 +54,7 @@ body{
 #encabezado{
     font-weight: bold;
     font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
 }
 #contenido{
     font-family: 'Quicksand', sans-serif;
@@ -61,7 +62,7 @@ body{
 #category{
 /*    width: 22rem;
 */
-    height: 26rem;
+    height: 23rem;
     border-radius:1rem;
 
 }
@@ -134,10 +135,12 @@ body{
     width: 219px;
     height: 283px;
     object-fit: cover;
-    border-radius: 9px;
+    border-radius: 1rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #destinations{
@@ -153,6 +156,5 @@ body{
     align-items: center;
     /*padding-left: 40px;
     padding-right: 40px;*/
-
 }
 
