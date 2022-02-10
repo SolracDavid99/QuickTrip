@@ -1,7 +1,9 @@
 .navbar{
     background-color: #f8f9fb;
 }
-
+body{
+    background-color: #f8f9fb;
+}
 #logo{
     width: 10rem;
 }
@@ -58,7 +60,6 @@
 
 }
 #aboutTour{
-    text-justify: auto;
     font-family: 'Quicksand', sans-serif;
 }
 .card{
@@ -68,4 +69,7 @@
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
     width: 14rem;
+}
+button{
+    border: none;
 }
