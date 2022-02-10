@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="35x35" href="/assets/favicon.png">
+    <title>QuickTrip</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/home.css">
+
+<!-- Fuente -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navegation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+            <a class="navbar-brand" href="/html/home.html"><img id="logo" src="/assets/nuevologo.png">
+                <img id="avion" src="/assets/nuevoavion.png">
+                <div></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./item.html">Lista de experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./addItem.html">Agregar experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./contactUs-v2.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./aboutUs.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <div>
+                                <img id="login" src="/assets/login.png">
+                            </div>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Iniciar sesión</a>
+                            <a class="dropdown-item" href="#">Registrate</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm align-self-start mr-3">
+                    <h1 id="encabezado" class="display-5 text-justify">¡Descrube experiencias únicas! Diseñadas para ti</h1>
+                    <br>
+                    <p class="lead" id="contenido" style="font-size: 2rem;">¿Estás listo para la aventura? ¡Vamos a tener un día extraordinario!</p>
+                </div>
+                <div class="col-sm">
+                    <img id="portada" class="img-fluid float-right" src="/assets/img/home/cancun.jpeg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-md">
+                <h2 id="encabezado">Experiencias</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Cards -->
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-md d-flex justify-content-center">
+                <div class="card.mx-auto">
+                    <img id="category" class="card-img-top" src="/assets/img/home/food.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text text-center font-weight-bold" id="contenido">Gastronómica</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" id="category"src="/assets/img/home/cabañas.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text text-center font-weight-bold" id="contenido">Cultural</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" id="category" src="/assets/img/home/piramide.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text text-center font-weight-bold" id="contenido">Recreativa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" id="category" src="/assets/img/home/nightlife.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text text-center font-weight-bold" id="contenido">Vida nocturna</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+    <script src="/js/form.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/js/mail.js"></script>
+
+</body>
+</html>
