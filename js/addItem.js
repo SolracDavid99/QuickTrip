@@ -23,12 +23,24 @@ function agregarItem(){
 
     sessionStorage.setItem("id",JSON.stringify(tour));
 
-    document.getElementsByTagName("input")[0].value="";
-    document.getElementsByTagName("select")[0].value="Gastronomic";
-    document.getElementsByTagName("input")[1].value="";
-    document.getElementsByTagName("input")[2].value="";
-    document.getElementsByTagName("input")[3].value="";
-    document.getElementsByTagName("textarea")[0].value="";
+    // document.getElementsByTagName("input")[0].value="";
+    // document.getElementsByTagName("select")[0].value="Gastronomic";
+    // document.getElementsByTagName("input")[1].value="";
+    // document.getElementsByTagName("input")[2].value="";
+    // document.getElementsByTagName("input")[3].value="";
+    // document.getElementsByTagName("textarea")[0].value="";
 
-    alert("Listo, producto registrado");
+    // Swal.fire({
+
+    //     position: 'center',
+
+    //     icon: 'success',
+
+    //     title: 'Item added succesfully',
+
+    //     showConfirmButton: false,
+
+    //     timer: 2000
+
+    // })
 }
