@@ -30,17 +30,17 @@ function agregarItem(){
     // document.getElementsByTagName("input")[3].value="";
     // document.getElementsByTagName("textarea")[0].value="";
 
-    Swal.fire({
+    // Swal.fire({
 
-        position: 'center',
+    //     position: 'center',
 
-        icon: 'success',
+    //     icon: 'success',
 
-        title: 'Item added succesfully',
+    //     title: 'Item added succesfully',
 
-        showConfirmButton: false,
+    //     showConfirmButton: false,
 
-        timer: 2000
+    //     timer: 2000
 
-    })
+    // })
 }
