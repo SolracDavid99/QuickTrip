@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+        <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/contactUs.css">
+</head>
+<body>
+    <!-- Navegation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+        <a class="navbar-brand" href="/html/home.html"><img id="logo" src="/assets/nuevologo.png">
+            <img id="avion" src="/assets/nuevoavion.png">
+            <div></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./item.html">Lista de experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./addItem.html">Agregar experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./contactUs-v2.html">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./aboutUs.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <img id="login" src="/assets/login.png">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Iniciar sesión</a>
+                        <a class="dropdown-item" href="#">Registrate</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-expanded="false">
+                    Tours
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#" onclick="pickTour(0)"> Descubre el centro historico</a>
+                    <a class="dropdown-item" href="#" onclick="pickTour(1)">Chichen Itza, Cenote and Valladolid</a>
+                    <a class="dropdown-item" href="#" onclick="pickTour(2)"> Hacienda + Cenote Mágico</a>
+                    <a class="dropdown-item" href="#" onclick="pickTour(3)"> Prueba de mezcal y cena en la jungla</a>
+                    <a class="dropdown-item" href="#" onclick="pickTour(4)"> Descubre Tlaquepaque</a>
+                    <a class="dropdown-item" href="#" onclick="pickTour(5)"> Visita "las 9 esquinas"</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-9">
+            <p id="tourName"></p>
+            <div class="row">
+                <div class="col-8 col-sm-4">
+                    <p id="tourImage"></p>
+                </div>
+                <div class="col-4 col-sm-8">
+                    <p id="aboutTour"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- <div>
+        <p id="element"></p>
+    </div> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

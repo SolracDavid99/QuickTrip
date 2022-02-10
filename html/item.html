@@ -17,13 +17,89 @@
 </head>
 <body>
     <!-- Navegation Bar -->
+<<<<<<< HEAD
     <div id="navBar"></div>
+=======
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+        <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo.png">
+            <img id="avion" src="../assets/nuevoavion.png">
+            <div></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./item.html">Item list</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./addItem.html">Add Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./contactUs-v2.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./aboutUs.html">About us</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <div>
+                            <img id="login" src="../assets/login.png">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Sign in</a>
+                        <a class="dropdown-item" href="./signUp.html">Sign Up</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+>>>>>>> main
 
 <!-- Tour card structure-->
+    <div class="container-fluid">
+        <div class="row" id="cards">
+        </div>
 
-    <div id="cards"></div>
+    </div>
+    <!-- <div id="cards"></div> -->
 
 <!-- Script for bulding the cards for the using the data from the tours database -->
+<!-- <div class="card mb-3">
+    <div class="row no-gutters">    
+        <div class="col-md-4">  
+            <img id="tourImage" src="${tours[i].image}" alt="..." class="img-fluid">
+        </div>
+        <div class="col-md-8">  
+            <div class="card-body"> 
+                <h5 class="card-title" id="tourName">${tours[i].name}</h5>    
+                <p class="card-text" id="aboutTour"><b>Location:</b> ${tours[i].location}     
+                <b> Category: </b>${tours[i].category}</p>
+                <p class="card-text" id="aboutTour">${tours[i].about}</p> 
+                <p class="card-text">${tours[i].price}</p>
+                <div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-primary" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Number of places
+                        </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">1</a>
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">3</a>
+                                <a class="dropdown-item" href="#">4</a>
+                            </div>
+                    </div>
+
+                </div>
+                <p class="card-text"><small class="text-muted">Rating: ${tours[i].rating} by ${tours[i].numReviews} reviews  </small></p>
+            </div>
+        </div>  
+    </div> 
+</div> -->
 <script>
 var cards = ''
 
@@ -33,6 +109,7 @@ function buildCards () {
 .then(tours => {
     for (let i = 0; i < tours.length; i++) {
         cards += 
+<<<<<<< HEAD
         `<div class="container-fluid"> 
             <div class="card mb-3">
                     <div class="row no-gutters">    
@@ -64,6 +141,15 @@ function buildCards () {
                             </div>
                         </div>  
                     </div> 
+=======
+        `<div class="col-md-2">
+            <div class="card.mx-auto">
+                <img id="tourImage" src="${tours[i].image}" alt="..." class="img-fluid">
+                <div class="card-body">
+                    <p class="card-title" id="tourName">${tours[i].name}</p>
+                    <p class="card-text" id="aboutTour"> <b>From ${tours[i].price}</b></p>
+                </div>
+>>>>>>> main
             </div>
         </div>`
     }

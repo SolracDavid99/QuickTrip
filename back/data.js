@@ -5,8 +5,13 @@ module.exports = {
       name: 'Discover the historic center',
       location: "CDMX",
       category: 'Culture',
+<<<<<<< HEAD
       image: 'https://c0.wallpaperflare.com/preview/371/682/395/mexico-ciudad-de-mexico-palacio-de-bellas-artes-city.jpg',
       price: 500,
+=======
+      image: '../assets/img/items/bellas-artes.jpg',
+      price: "500 mxn/pp",
+>>>>>>> main
       brand: '-',
       rating: 4.5,
       numReviews: 10,
@@ -43,8 +48,13 @@ module.exports = {
       name: 'Magic CENOTES + Hacienda',
       location: "Riviera Maya",
       category: 'Recreative',
+<<<<<<< HEAD
       image: 'https://aquaworld.com.mx/wp-content/uploads/2021/04/que-son-los-cenotes_1100x619.jpg',
       price: 990,
+=======
+      image: '../assets/img/items/cenote.jpg',
+      price: "990 mxn pp",
+>>>>>>> main
       brand: '-',
       rating: 4,
       numReviews: 45,
@@ -55,8 +65,13 @@ module.exports = {
       name: 'Mezcal tasting & dinner in mini jungle',
       location: 'Riviera Maya',
       category: 'Nightlife',
+<<<<<<< HEAD
       image: "https://media-cdn.tripadvisor.com/media/photo-s/07/81/72/67/kanha-jungle-lodge.jpg",
       price: 2200,
+=======
+      image: "../assets/img/items/mezcal.webp",
+      price: "2,200 mxn pp",
+>>>>>>> main
       brand: '-',
       rating: 2.5,
       numReviews: 198,
@@ -68,8 +83,13 @@ module.exports = {
       name: 'Knowing Tlaquepaque',
       location: 'Jalisco',
       category: 'Culture',
+<<<<<<< HEAD
       image: 'https://heraldodemexico.com.mx/u/fotografias/m/2021/6/17/f608x342-385637_415360_0.jpg',
       price: 900,
+=======
+      image: '../assets/img/items/tlaquepaque.jpg',
+      price: "900 mxn pp",
+>>>>>>> main
       brand: '-',
       rating: 3.5,
       numReviews: 89,
@@ -78,11 +98,16 @@ module.exports = {
     },
     {
       _id: '7',
-      name: 'Visiting the “9 esquinas',
+      name: 'Visiting the 9 esquinas',
       location: 'Jalisco',
       category: 'Gastronomic',
+<<<<<<< HEAD
       image: 'https://i.pinimg.com/564x/75/fe/a2/75fea2e44f0493631d733efb5cb90f51.jpg',
       price: 600,
+=======
+      image: '../assets/img/items/9-esquinas.jpg',
+      price: "600 mxn pp",
+>>>>>>> main
       brand: '-',
       rating: 4.5,
       numReviews: 45,
@@ -94,8 +119,13 @@ module.exports = {
       name: 'Fighting night',
       location: 'CDMX',
       category: 'Nightlife',
+<<<<<<< HEAD
       image: 'https://imagenes.razon.com.mx/files/image_940_470/uploads/2020/10/17/5f8b3042f258e.jpeg',
       price: 1200,
+=======
+      image: '../assets/img/items/lucha.jpg',
+      price: "1,200 mxn pp",
+>>>>>>> main
       brand: '-',
       rating: 4.5,
       numReviews: 45,

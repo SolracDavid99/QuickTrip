@@ -1,0 +1,27 @@
+.container-fluid {
+}
+
+#first-part {
+    background-color: #F4E6D6;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    text-align: left;
+}
+
+#second-part {
+    background-color: #F5F1ED;
+    border-radius: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    font-family: 'Quicksand'
+}
+
+#text-signUp {
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+}
+
