@@ -57,10 +57,45 @@
     </nav>
 
 <!-- Tour card structure-->
+    <div class="container-fluid">
+        <div class="row" id="cards">
+        </div>
 
-    <div id="cards"></div>
+    </div>
+    <!-- <div id="cards"></div> -->
 
 <!-- Script for bulding the cards for the using the data from the tours database -->
+<!-- <div class="card mb-3">
+    <div class="row no-gutters">    
+        <div class="col-md-4">  
+            <img id="tourImage" src="${tours[i].image}" alt="..." class="img-fluid">
+        </div>
+        <div class="col-md-8">  
+            <div class="card-body"> 
+                <h5 class="card-title" id="tourName">${tours[i].name}</h5>    
+                <p class="card-text" id="aboutTour"><b>Location:</b> ${tours[i].location}     
+                <b> Category: </b>${tours[i].category}</p>
+                <p class="card-text" id="aboutTour">${tours[i].about}</p> 
+                <p class="card-text">${tours[i].price}</p>
+                <div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-primary" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Number of places
+                        </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">1</a>
+                                <a class="dropdown-item" href="#">2</a>
+                                <a class="dropdown-item" href="#">3</a>
+                                <a class="dropdown-item" href="#">4</a>
+                            </div>
+                    </div>
+
+                </div>
+                <p class="card-text"><small class="text-muted">Rating: ${tours[i].rating} by ${tours[i].numReviews} reviews  </small></p>
+            </div>
+        </div>  
+    </div> 
+</div> -->
 <script>
 
 function buildCards () {
@@ -70,37 +105,13 @@ function buildCards () {
     let cards = ''
     for (let i = 0; i < tours.length; i++) {
         cards += 
-        `<div class="container-fluid"> 
-            <div class="card mb-3">
-                    <div class="row no-gutters">    
-                        <div class="col-md-4">  
-                            <img id="tourImage" src="${tours[i].image}" alt="..." class="img-fluid">
-                        </div>
-                        <div class="col-md-8">  
-                            <div class="card-body"> 
-                                <h5 class="card-title" id="tourName">${tours[i].name}</h5>    
-                                <p class="card-text" id="aboutTour"><b>Location:</b> ${tours[i].location}     
-                                <b> Category: </b>${tours[i].category}</p>
-                                <p class="card-text" id="aboutTour">${tours[i].about}</p> 
-                                <p class="card-text">${tours[i].price}</p>
-                                <div>
-
-                                    <div class="dropdown">
-                                        <button class="btn btn-primary" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Number of places
-                                        </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">1</a>
-                                                <a class="dropdown-item" href="#">2</a>
-                                                <a class="dropdown-item" href="#">3</a>
-                                                <a class="dropdown-item" href="#">4</a>
-                                            </div>
-                                    </div>
-
-                                </div>
-                                <p class="card-text"><small class="text-muted">Rating: ${tours[i].rating} by ${tours[i].numReviews} reviews  </small></p>
-                            </div>
-                        </div>  
-                    </div> 
+        `<div class="col-md-2">
+            <div class="card.mx-auto">
+                <img id="tourImage" src="${tours[i].image}" alt="..." class="img-fluid">
+                <div class="card-body">
+                    <p class="card-title" id="tourName">${tours[i].name}</p>
+                    <p class="card-text" id="aboutTour"> <b>From ${tours[i].price}</b></p>
+                </div>
             </div>
         </div>`
     }

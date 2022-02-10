@@ -47,11 +47,14 @@
     padding-right: 1px;
 }
 #tourName{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: justify;
     font-family: 'Mochiy Pop P One', sans-serif;
 }
 #tourImage{
     border-radius:1rem;
+    height: 18rem;
+    width: 13.5rem;
 
 }
 #aboutTour{
@@ -61,4 +64,8 @@
 .card{
     border: none;
     background-color: #f8f9fb;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    width: 14rem;
 }
