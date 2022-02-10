@@ -68,15 +68,17 @@ function buildCards () {
 .then(tours => {
     for (let i = 0; i < tours.length; i++) {
         cards += 
-        `<div class="col-md-2">
+        `
+        <div class="col-md-2">
             <div class="card.mx-auto">
                 <button><img id="tourImage" src="${tours[i].image}" alt="..." class="img-fluid"></button>
                 <div class="card-body">
                     <p class="card-title text-left" id="tourName">${tours[i].name}</p>
-                    <p class="card-text" id="aboutTour"> <b>From ${tours[i].price}</b> p/p</p>
+                    <p class="card-text" id="aboutTour"> <b>From ${tours[i].price} MXN p/p</b> p/p</p>
                 </div>
             </div>
-        </div>`
+        </div>
+        `
     }
     document.getElementById('cards').innerHTML = cards
 })
@@ -90,39 +92,17 @@ function buildCardsSessionStorage(){
     console.log (newTour.tourName);
     
     cards += 
-        `<div class="container-fluid"> 
-            <div class="card mb-3">
-                    <div class="row no-gutters">    
-                        <div class="col-md-4">  
-                            <img id="tourImage" src="${newTour.imageUrl}" alt="..." class="img-fluid">
-                        </div>
-                        <div class="col-md-8">  
-                            <div class="card-body"> 
-                                <h5 class="card-title" id="tourName">${newTour.tourName}</h5>    
-                                <p class="card-text" id="aboutTour"><b>Location:</b> ${newTour.state}     
-                                <b> Category: </b>${newTour.category}</p>
-                                <p class="card-text" id="aboutTour">${newTour.description}</p> 
-                                <p class="card-text">${newTour.price} MXN</p>
-                                <div>
-
-                                    <div class="dropdown">
-                                        <button class="btn btn-primary" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Number of places
-                                        </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">1</a>
-                                                <a class="dropdown-item" href="#">2</a>
-                                                <a class="dropdown-item" href="#">3</a>
-                                                <a class="dropdown-item" href="#">4</a>
-                                            </div>
-                                    </div>
-
-                                </div>
-                                <p class="card-text"><small class="text-muted">Rating: ${newTour.rating} by ${newTour.reviews} reviews  </small></p>
-                            </div>
-                        </div>  
-                    </div> 
+        `
+        <div class="col-md-2">
+            <div class="card.mx-auto">
+                <button><img id="tourImage" src="${newTour.imageUrl}" alt="..." class="img-fluid"></button>
+                <div class="card-body">
+                    <p class="card-title text-left" id="tourName">${newTour.tourName}</p>
+                    <p class="card-text" id="aboutTour"> <b>From ${newTour.price} MXN p/p</b> p/p</p>
+                </div>
             </div>
-        </div>`
+        </div>
+        `
     
     document.getElementById('cards').innerHTML = cards;
 
