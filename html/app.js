@@ -24,6 +24,9 @@ function buildNavBar() {
             <li class="nav-item">
                 <a class="nav-link text-black" href="./aboutUs.html">About us</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="../htmlES/homeES.html">ES</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
                     <div>
