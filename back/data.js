@@ -78,7 +78,7 @@ module.exports = {
     },
     {
       _id: '7',
-      name: 'Visiting the “9 esquinas',
+      name: 'Visiting the 9 esquinas',
       location: 'Jalisco',
       category: 'Gastronomic',
       image: 'https://i.pinimg.com/564x/75/fe/a2/75fea2e44f0493631d733efb5cb90f51.jpg',
