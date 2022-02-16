@@ -29,17 +29,30 @@
                 <h1 id="encabezado" class="display-5">Discover experiences designed specially for you!</h1>
                 <br>
                 <p class="lead" id="contenido" style="font-size: 2rem;">Are you ready to go for an adventure? Make your day extraordinaire?</p>
-                    <form class="form-inline justify-content-center">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width: 30rem;">
-                        <button class="btn btn-light" type="submit"><img src="../assets/img/home/search.png" alt="" style="height: 1.5rem;"></button>
-                    </form>
-            </div>
+                <br><br>
+                <!-- Search Bar -->
+                <div class="col-md-6 mx-auto">
+                    <button class="btn btn-outline-danger rounded-pill" data-toggle="collapse" data-target="#collapseExample">
+                        <span  id="search">&nbsp;Find your next adventure&nbsp;</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                            <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                            <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+                        </svg>
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <input type="date" min="" max="2019-06-08"/>
+                        </div>
+                    </div>
+                </div>
+            </div><!--col-md-6-->
+            <br><br>
             <div class="col-md-6">
                 <img id="portada" class="img-fluid float-right" src="../assets/img/home/cancun.jpeg" alt="">
             </div>
         </div>
     </div>
-
+    <br><br>
     <div class="container-fluid d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="col-md">
@@ -69,7 +82,7 @@
             </div>
             <div class="col-md d-flex justify-content-center">
                 <div class="card">
-                    <img class="img-fluid" id="category" src="../assets/img/home/piramide.jpg" alt="Card image cap">
+                    <img class="img-fluid" id="category" src="../assets/img/home/grutas.webp" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Outdoors</p>
                     </div>
