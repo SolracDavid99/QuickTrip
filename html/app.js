@@ -1,8 +1,8 @@
 function buildNavBar() {
     var navBar =     
     `
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
-    <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo.png">
+    <nav class="navbar navbar-expand-lg navbar-light p-3 mb-5">
+    <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo2.png">
         <img id="avion" src="../assets/nuevoavion.png">
         <div></div>
     </a>
@@ -25,7 +25,7 @@ function buildNavBar() {
                 <a class="nav-link text-black" href="./aboutUs.html">About us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-black" href="../htmlES/homeES.html">ES</a>
+                <a class="nav-link text-black" href="../htmlES/homeES.html">ES/EN</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
