@@ -22,10 +22,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap"
             rel="stylesheet">
+<<<<<<< HEAD
         <!-- Navbar -->
         <link rel="stylesheet" href="../css/navbar.css">
         <!-- Color Body -->
         <link rel="stylesheet" href="../css/body.css">
+=======
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+>>>>>>> 82314dea7c7fd86fc003257ed761fe5aef53b793
 </head>
 <body>
     <!-- Navegation Bar -->
@@ -45,9 +52,19 @@
                         Already a member?</p>
                 </div>
                 <div id="form-group">
-                    <label for="exampleInputEmail1">User Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted"></small>
+                    <label for="exampleInputFullName">Full Name</label>
+                    <input type="fullName" class="form-control" id="exampleInputFullName" aria-describedby="fullNameHelp">
+                    <small id="fullNameHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPhone">Phone</label>
+                    <input type="phone" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp">
+                    <small id="phoneHelp" class="form-text text-muted"></small>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">User Name</label>
+                  <input type="email" class="form-control" id="exampleInputUserName" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted"></small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
@@ -58,12 +75,32 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary">Create an account</button>
-            </form>
+                <div class="form-group">
+                  <label for="exampleConfirmPassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleConfirmPassword">
+                </div>
+              </form>
+              <button class="btn btn-primary" onclick="signUp()">Create an account</button>
+
+              <div class="message">
+                <div class="success" id="success"> Thanks for your register, you are one step closer for your next adventure!
+
+                </div>
+                <div class="danger" id="danger">You have left a required field blank, please check it out.</div>
+                <div class="alerts" id="alert1"> This field cannot have numbers, please check it out.</div>
+                <div class="alerts" id="alert2"> It is something wrong, please check your email.</div>
+                <div class="alerts" id="alert3"> This field is for your phone number, you can not have letters.</div>
+                <div class="alerts" id="alert4"> This UserName is already taken.</div>
+                <div class="alerts" id="alert5"> Passwords did not match.Please verify</div>
+
+            </div>    
         </div>
     </div>
     </div>
 
     <script src="../js/navbar.js"></script>
+    <script src="/js/signUpForm.js"></script>
+
+
 </body>
 </html>
