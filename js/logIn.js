@@ -1,4 +1,29 @@
 
+function showUsers () {
+
+    var user1 = {
+        userName : "user1",
+        password : "password1"
+    };
+    
+    var user2 = {
+        userName : "user2",
+        password : "password2"
+    };
+    
+    var user3 = {
+        userName : "user3",
+        password : "password3"
+    };
+    
+    localStorage.setItem("user1",JSON.stringify(user1));
+    localStorage.setItem("user2",JSON.stringify(user2));
+    localStorage.setItem("user3",JSON.stringify(user3));
+    
+}
+
+showUsers();
+
 
 function formulario(){
 
