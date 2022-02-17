@@ -34,8 +34,8 @@ function buildNavBar() {
                     </div>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Login</a>
-                    <a class="dropdown-item" href="./signUp.html">Register</a>
+                    <a class="dropdown-item" href="../html/login.html">Login</a>
+                    <a class="dropdown-item" href="../html/signUp.html">Register</a>
                 </div>
             </li>
         </ul>

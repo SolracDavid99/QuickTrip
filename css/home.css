@@ -1,76 +1,3 @@
-.navbar{
-    font-size: 1.22rem;
-}
-
-#logo{
-    width: 10rem;
-}
-#avion {
-    width: 3.5rem;
-    animation-name: volar;
-        animation-duration: 3s;
-        position: absolute;
-        top: 11.5px;
-        left: 175px;
-}
-@keyframes volar {
-    5% {transform: translate(10px, 5px);}
-    10% {transform: translate(20px, 10px);}
-    15% {transform: translate(30px, 12px);}
-    20% {transform: translate(40px, 15px);}
-    25% {transform: translate(50px, 15px);}
-    30% {transform: translate(70px, 12px);}
-    35% {transform: translate(80px, 10px);}
-    40% {transform: translate(90px, 5px);}
-    45% {transform: translate(100px, 0px);}
-    50% {transform: translate(120px, -5px);}
-    55% {transform: translate(130px, -10px);}
-    60% {transform: translate(140px, -20px);}
-    65% {transform: translate(160px, -30px);}
-    70% {transform: translate(170px, -40px);}
-    75% {transform: translate(190px, -60Ppx);}
-    80% {transform: translate(210px, -70px);}
-    85% {transform: translate(220px, -90px);}
-    90% {transform: translate(-260px, -200px);}
-    95% {transform: translate(-130px, -100px);}
-    96% {transform: translate(-80px, -50px);}
-    97% {transform: translate(-40px, -10px);}
-    100% {transform: translate(0px, 0px);}
-}
-#login{
-    width: 1.9rem;
-}
-.dropdown-menu {
-    right: 0;
-    left: auto;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-body{
-    /* background-color: whitesmoke; */
-    /*background-color: #F4E6D6;*/
-    /*
-    background-image: linear-gradient(0, #cde2bc 0, #ED6A5A 50%, #00AF54 100%);
-    */
-    background-image: radial-gradient(circle at 50% -20.71%, #ffdfda 0, #ffdfd8 6.25%, #ffe0d5 12.5%, #ffe1d3 18.75%, #fee2d1 25%, #fbe3cf 31.25%, #f8e4ce 37.5%, #f5e5cd 43.75%, #f2e6cd 50%, #eee7cd 56.25%, #ebe8ce 62.5%, #e7e9cf 68.75%, #e3ead0 75%, #dfebd2 81.25%, #dcecd4 87.5%, #d8edd7 93.75%, #d5edda 100%);
-
-}
-
-#encabezado{
-    font-weight: bold;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 2rem;
-    color: #13505B;
-}
-#contenido{
-    font-family: 'Quicksand', sans-serif;
-}
-#category{
-    width: 17.25rem;
-    height: 23rem;
-    border-radius:1rem;
-
-}
 .card{
     border: none;
     background-color: #f8f9fb;
@@ -210,4 +137,9 @@ body{
 
 #searchQuerySubmit:hover {
     cursor: pointer;
+}
+#category{
+    width: 17.25rem;
+    height: 23rem;
+    border-radius:1rem;
 }

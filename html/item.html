@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/itemList.css">
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <!-- Color Body -->
+    <link rel="stylesheet" href="../css/body.css">
 </head>
 <body>
     <!-- Navegation Bar -->
@@ -93,7 +97,7 @@ function buildCardsSessionStorage(){
     
     cards += 
         `
-        <div class="col-md-2">
+        <div class="col-auto">
             <div class="card.mx-auto">
                 <button><img id="tourImage" src="${newTour.imageUrl}" alt="..." class="img-fluid"></button>
                 <div class="card-body">
@@ -115,7 +119,7 @@ buildCardsSessionStorage();
 
 
 </script>
-<script src="./app.js"></script> <!--Link to app.js with nav bar render-->
+<script src="../js/navbar.js"></script> <!--Link to app.js with nav bar render-->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
