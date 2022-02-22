@@ -36,14 +36,13 @@
 			</div>
 			<div class="form-group col-md-12">
 				<label for="inputEmail4" id="contenido">Tour name</label>
-				<input type="text" class="form-control" id="inputEmail4" placeholder="Tour name">
+				<input type="text" class="form-control" id="inputTourName" placeholder="Tour name">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="inputAddress" id="contenido">Category</label>
 			<label for="exampleFormControlSelect1" id="contenido">Example select</label>
-			<select class="form-control" id="exampleFormControlSelect1">
-			<!-- <input list="type" class="form-control" id="inputAddress" placeholder="Aqui debe de ir la categoria"> -->
+			<select class="form-control" id="formControlCategory">
 				<option>Gastronomic</option>
 				<option>Night Life</option>
 				<option>Cultural</option>
@@ -52,12 +51,12 @@
 		</div>
 		<div class="form-group">
 			<label for="inputAddress2" id="contenido">Price</label>
-			<input type="text" class="form-control" id="inputAddress2" placeholder="Cost of the tour">
+			<input type="text" class="form-control" id="inputPrice" placeholder="Cost of the tour">
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-12">
 				<label for="inputCity" id="contenido">State</label>
-				<input type="text" class="form-control" id="inputCity" placeholder="Ex: Jalisco,CDMX,Quintana Roo">
+				<input type="text" class="form-control" id="inputState" placeholder="Ex: Jalisco,CDMX,Quintana Roo">
 			</div>
 		</div>
 		<div class="form-row">
@@ -74,13 +73,32 @@
 		</div>
 		<div class="form-group">
 			<label for="inputImage" id="contenido">Image URL</label>
-			<input type="text" class="form-control" id="inputAddress2" placeholder="Paste the image URL">
+			<input type="text" class="form-control" id="inputImageUrl" placeholder="Paste the image URL">
 		</div>
 		<div class="form-group">
 			<label for="DescriptionInput" id="contenido">Description:</label>
-			<textarea class="form-control" id="DescriptionInput" rows="4" placeholder="What's the description of the tour?"></textarea>
+			<textarea class="form-control" id="textAreaDescription" rows="4" placeholder="What's the description of the tour?"></textarea>
 		</div>	
-		<button type="submit" class="btn btn-primary" onclick="agregarItem()" id="contenido">Submit</button>
+		<button type="button" class="btn btn-primary" onclick="agregarItem()" id="contenido">Submit</button>
+
+
+		<div class="form-group message col-md-6">
+
+			<div class="success" id="success"> The new item has been added! </div>
+
+			<div class="danger" id="danger">You have left a required field blank, please check it out.</div>
+
+			<div class="alerts" id="alert1"> This field cannot have numbers, please check it out.</div>
+
+			<div class="alerts" id="alert2"> It is something wrong, please check your email.</div>
+
+			<div class="alerts" id="alert3"> This field is for your phone number, you can not have letters.</div>
+
+			<div class="alerts" id="alert4"> This UserName is already taken.</div>
+
+			<div class="alerts" id="alert5"> Passwords did not match.Please verify</div>
+
+		</div>    
 	</form>
 
 

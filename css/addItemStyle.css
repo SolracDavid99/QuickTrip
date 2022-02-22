@@ -8,7 +8,7 @@
     text-justify: auto;
     font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
-    
+
 }
 
 .btn{
@@ -45,5 +45,43 @@ textarea{
 
 .form-control:hover{
 	background-color: #ffd8ca2f;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+}
+
+.success{
+    font-size: 1.3rem;
+    color: green;
+    display: none;
+}
+
+.danger{
+    font-size: 1.3rem;
+    color: red;
+    display: none;
+}
+
+.alerts{
+    font-size: 1.3rem;
+    color: orange;
+    display: none;
+}
+
+.borderColorDanger {
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+}
+
+.borderColorAlert{
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px;
 }
 
