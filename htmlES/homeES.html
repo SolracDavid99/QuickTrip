@@ -15,30 +15,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap"
     rel="stylesheet">
+<!-- Navbar -->
+<link rel="stylesheet" href="../css/navbar.css">
+<!-- Color Body -->
+<link rel="stylesheet" href="../css/body.css">
 
 </head>
 <body>
-
     <!-- Navegation Bar -->
     <div id="navBar"></div>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm align-self-start mr-3">
-                    <h1 id="encabezado" class="display-5 text-justify">¡Descrube experiencias únicas! Diseñadas para ti</h1>
-                    <br>
-                    <p class="lead" id="contenido" style="font-size: 2rem;">¿Estás listo para la aventura? ¡Vamos a tener un día extraordinario!</p>
-                </div>
-                <div class="col-sm">
-                    <img id="portada" class="img-fluid float-right" src="/assets/img/home/cancun.jpeg" alt="">
-
-                </div>
+    <!-- Title -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 id="encabezado" class="display-5">¡Descrube experiencias únicas! Diseñadas para ti</h1>
+                <br>
+                <p class="lead" id="contenido" style="font-size: 2rem;">¿Estás listo para la aventura? ¡Vamos a tener un día extraordinario</p>
+                <br><br>
+                <!-- Search Bar -->
+                    <div class="searchBar">
+                        <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Encuentra tu siguiente aventura?" value="" />
+                        <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                            <!-- Icon mag heart -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                                <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                                <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+                            </svg>
+                        </button>
+                    </div><!--col-md-6 Search Bar-->
+            </div><!--col-md-6-->
+            
+            <div class="col-md-6">
+                <img id="portada" class="img-fluid float-right" src="../assets/img/home/cancun.jpeg" alt="">
             </div>
         </div>
     </div>
-
+    <br><br>
     <div class="container-fluid d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="col-md">
@@ -52,51 +65,63 @@
         <div class="row">
             <div class="col-md d-flex justify-content-center">
                 <div class="card.mx-auto">
-                    <img id="category" class="card-img-top" src="/assets/img/home/food.jpg" alt="Card image cap">
+                    <img id="category" class="img-fluid" src="../assets/img/home/food.jpg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Gastronómica</p>
                     </div>
                 </div>
             </div>
             <div class="col-md d-flex justify-content-center">
-                <div class="card">
-                    <img class="card-img-top" id="category"src="/assets/img/home/cabañas.jpeg" alt="Card image cap">
+                <div class="card.mx-auto">
+                    <img class="img-fluid" id="category"src="../assets/img/home/cabañas.jpeg" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Cultural</p>
                     </div>
                 </div>
             </div>
             <div class="col-md d-flex justify-content-center">
-                <div class="card">
-                    <img class="card-img-top" id="category" src="/assets/img/home/piramide.jpg" alt="Card image cap">
+                <div class="card.mx-auto">
+                    <img class="img-fluid" id="category" src="../assets/img/home/grutas.webp" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center font-weight-bold" id="contenido">Recreativa</p>
                     </div>
                 </div>
             </div>
             <div class="col-md d-flex justify-content-center">
-                <div class="card">
-                    <img class="card-img-top" id="category" src="/assets/img/home/nightlife.jpg" alt="Card image cap">
+                <div class="card.mx-auto">
+                    <img class="img-fluid" id="category" src="../assets/img/home/nightlife.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text text-center font-weight-bold" id="contenido">Vida nocturna</p>
+                        <p class="card-text text-center font-weight-bold" id="contenido">Vida Nocturna</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
+    <!-- Destinations -->
+    <div class="container-fluid">
+        <div class="row" id="destinations" >
+            <div class="col-md-6">
+                <p id="encabezado">¡Mira los destinos que tenemos listos para ti!</p>
+            </div>
+            <div class="col-md-3">
+                <img src="../assets/img/home/tequila.jpg" alt="tequila" class="image-scroll">
+                <br><br>
+            </div>
+            <div class="col-md-3">
+                <img src="../assets/img/home/hacienda.jpg" alt="hacienda" class="image-scroll">
+                
+                <br><br>
+                <img src="../assets/img/home/valladolid.jpg" alt="valladolid" class="image-scroll">
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
-
-    <script src="/js/form.js"></script>
-    <script src="./app.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/js/mail.js"></script>
+    <script src="../js/navbar-Es.js"></script>
 
 </body>
 </html>
