@@ -13,9 +13,12 @@
     align-items: center;*/
 }
 
+#commentBox{
+    border-radius: 1rem;
+}
 
-
-
-
-
-
+#submit{
+    border-radius: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    
+}
