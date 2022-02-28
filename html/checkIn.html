@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/checkIn.css">
 </head>
 
-<body>
+
     <!-- Navegation Bar -->
     <div id="navBar"></div>
 
@@ -47,26 +47,88 @@
     </div>
     <!--SECOND PART-->
     <br><br>
-    <div class="container">
-                <h1 class="text-justify" id="contenido">Mexico from outer space </h1>
             <!--Agregar rating y logo estrella-->
+
+    <div class="container-fluid" id="second-part">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-justify" id="encabezado">Mexico from outer space </h1>
+                <p id="encabezado">CDMX - Cultural experience</p>
+                <p id="contenido" class="font-weight-bold" style="font-size: large;">10,000,000 $ MXN pp</p>
+    
+                <p id="contenido" class="font-weight-bold" style="font-size: large;">"This experience is your great
+                    opportunity to get to know Mexico
+                    from another perspective,
+                    out of the ordinary. Fly in a rocket and let the wind take you on an unforgettable journey,
+                    witnessing the first contact between man and heaven."</p>
+                </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1" id="contenido">Guests</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="start">Start date:</label>
+                        
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        </div>
+            </div>
+        </div>
+    </div>
+    <!--Reviews -->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-3">
+                <div class="card.mx-auto">
+                    
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card.mx-auto">
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card.mx-auto">
+                    
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--Add comment-->
+    <div class="container-fluid">
+        <di class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-10">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1" id="contenido" style="font-size: large;"> <b>Leave us a comment:</b></label>
+                            <textarea class="form-control" id="commentBox" rows="5"></textarea>
+                        </div>
+                    </form>
+                    <div class="text-right">
+                        <button class="btn btn-dark float-right" type="button" id="submit" data-toggle="modal" data-target="#exampleModal" value="">
+                            Submit
+                        </button>
+                    </div>
+            </div>
+            
+        <!--divds del row y col md-->
+    </div>
+    </div>
+    </div>
     </div>
 
-    <div class="container" id="second-part">
-        <p id="encabezado">CDMX - Cultural experience</p>
-        <p id="contenido" class="font-weight-bold">10,000,000 $ MXN pp</p>
-        
-        <p id="contenido" class="font-weight-bold">"This experience is your great opportunity to get to know Mexico
-        from another perspective,
-        out of the ordinary. Fly in a rocket and let the wind take you on an unforgettable journey,
-        witnessing the first contact between man and heaven."</p>
-</div>
-    
     <!--THIRD PART-->
-    <div class="container">
-        <h1 class="text-justify" id="contenido">More tours </h1>
-        <!--Agregar rating y logo estrella-->
+    <div class="container" id="">
+        <h1 class="text-justify" id="encabezado">More tours </h1>
     </div>
+
     <br>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center align-items-center">
@@ -87,6 +149,8 @@
             </div>
         </div>
     </div>
+
+    <br>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

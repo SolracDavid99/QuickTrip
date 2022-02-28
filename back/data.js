@@ -15,7 +15,7 @@ module.exports = {
     },
         {
       _id: '2',
-      name: 'Teotihuacan Ballon Ride',
+      name: 'Teotihuacan Balloon Ride',
       location: "CDMX",
       category: 'Culture',
       image: 'https://ichef.bbci.co.uk/news/800/cpsprodpb/BEE3/production/_118676884_gettyimages-73656849.jpg.webp',
@@ -37,7 +37,7 @@ module.exports = {
       brand: '-',
       rating: 5,
       numReviews: 51,
-      about : "I will take you to explore one of the seven wonders of the modern world Chichen Itza in a unique experience. Before we will pass to the center of Valladolid and after knowing the archeological site I will take you to know an authentic Mayan cenote, beauty of nature full of mysticism. At noon you will enjoy a delicious buffet of regional Mexican food with vegetarian options. /n   Once in Chichen Itza, we will walk through the observatory, the Temple of the Warriors and the Ball Court. And you will see the legendary Kukulkan Pyramid, also known as El Castillo, from the front, and I will tell you how during the equinox on a clear day, a snake slides down the stairs of the pyramid, which is actually a shadow created by the setting sun . You will live closely the mysteries of acoustics in its architecture, which to date are not fully understood. You will clearly hear a whisper 159 feet (46 meters) away on one of the platforms on the colossal ball court where the Maya played sports. /n With this exclusive tour, your visit to Chichen Itza allows you to explore the archeological site in an exclusive and unique way!"
+      about : "You will explore one of the seven wonders of the modern world Chichen Itza in an unique experience. First you will pass to the center of Valladolid, and after discovering the archeological site you will get to know an authentic Mayan cenote, beauty of nature full of mysticism. At noon you will enjoy a delicious buffet of regional Mexican food with vegetarian options. /n   Once in Chichen Itza, you will walk through the observatory, the Temple of the Warriors and the Ball Court. And you will see the legendary Kukulkan Pyramid, also known as El Castillo, from the front, and you will hear the story of how during the equinox on a clear day, a snake slides down the stairs of the pyramid, which is actually a shadow created by the sun setting. You will closely experience the mysteries of acoustics in its architecture, which to date are not fully understood. A whisper 159 feet (46 meters) away will be heard on one of the platforms on the colossal ball court where the Mayan played sports. /n With this exclusive tour, your visit to Chichen Itza allows you to explore the archeological site in an exclusive and unique way!"
     },
     {
       _id: '4',
