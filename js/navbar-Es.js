@@ -19,7 +19,7 @@ function buildNavBar() {
                 <a class="nav-link text-black" href="./addItem.html">Añadir Items</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-black" href="./contactUs-v2.html">Contactanos</a>
+                <a class="nav-link text-black" href="./contactUs-v2.html">Contáctanos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-black" href="./aboutUs.html">Acerca de nostros</a>
