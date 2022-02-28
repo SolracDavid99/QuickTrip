@@ -13,9 +13,6 @@ function buildNavBar() {
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-black" href="./item.html">Item list</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link text-black" href="./addItem.html">Add Item</a>
             </li>
             <li class="nav-item">
