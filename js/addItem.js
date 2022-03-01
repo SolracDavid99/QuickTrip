@@ -1,10 +1,10 @@
 function agregarItem(){
 
-    const regexName = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g;
+    //const regexName = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g;
 
     const regexNumber = /^[0-9]*$/
 
-const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
+    // const regexRating = /^[0-5]*$/
     
     var city = null;
     var tourName = document.getElementById("inputTourName").value;
@@ -13,10 +13,12 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     var state = document.getElementById("inputState").value;
     var rating = document.getElementById("inputRating").value;
     var reviews= document.getElementById("inputReviews").value;
-    var imageUrl = document.getElementById("inputImageUrl").value;
+    var imageUrl1 = document.getElementById("inputImageUrl1").value;
+    var imageUrl2 = document.getElementById("inputImageUrl2").value;
+    var imageUrl3 = document.getElementById("inputImageUrl3").value;
     var description = document.getElementById("textAreaDescription").value;
 
-    //console.log(tourName,category,price,state,rating,reviews,imageUrl,description);
+    // console.log(tourName,category,price,state,rating,reviews,imageUrl,description);
 
     document.getElementsByTagName("input")[0].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("select")[0].classList.remove("borderColorDanger","borderColorAlert");
@@ -25,6 +27,8 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     document.getElementsByTagName("input")[3].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("input")[4].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("input")[5].classList.remove("borderColorDanger","borderColorAlert");
+    document.getElementsByTagName("input")[6].classList.remove("borderColorDanger","borderColorAlert");
+    document.getElementsByTagName("input")[7].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("textarea")[0].classList.remove("borderColorDanger","borderColorAlert");
 
     danger.style.display = 'none';
@@ -32,17 +36,15 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     alert1.style.display = 'none';
     alert2.style.display = 'none';
     alert3.style.display = 'none';
-    alert4.style.display = 'none';
-    alert5.style.display = 'none';
 
     //test con regex
-    const onlyLettersTours = regexName.test(tourName);
+    //const onlyLettersTours = regexName.test(tourName);
     const onlyNumbersPrice = regexNumber.test(price);
-    const onlyLettersState = regexName.test(state);
-    const onlyRating = regexRating.test(rating);
+    // const onlyLettersState = regexName.test(state);
+    // const onlyRating = regexRating.test(rating);
     const onlyNumbersReviews = regexNumber.test(reviews);
 
-    if(tourName.length == 0 || price.length == 0|| state.length == 0 || rating.length == 0 || reviews.length == 0 || imageUrl.length == 0 || description.length == 0){
+    if(tourName.length == 0 || price.length == 0|| state.length == 0 || rating.length == 0 || reviews.length == 0 || imageUrl1.length == 0 || imageUrl2.length == 0 || imageUrl3.length == 0 || description.length == 0){
 
         danger.style.display = 'block';
 
@@ -61,30 +63,33 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
         if(reviews.length == 0 ){
             document.getElementById("inputReviews").classList.add("borderColorDanger");
         }
-        if(imageUrl.length == 0 ){
-            document.getElementById("inputImageUrl").classList.add("borderColorDanger");
+        if(imageUrl1.length == 0 ){
+            document.getElementById("inputImageUrl1").classList.add("borderColorDanger");
+        }
+        if(imageUrl2.length == 0 ){
+            document.getElementById("inputImageUrl2").classList.add("borderColorDanger");
+        }
+        if(imageUrl3.length == 0 ){
+            document.getElementById("inputImageUrl3").classList.add("borderColorDanger");
         }
         if(description.length == 0){
             document.getElementById("textAreaDescription").classList.add("borderColorDanger");
         }
 
-    }else if(onlyLettersTours==false){
-        alert1.style.display = 'block';
-        document.getElementById("inputTourName").classList.add("borderColorAlert");
     }
-    else if(onlyNumbersPrice==false){
-        alert2.style.display = 'block';
+    // else if(onlyLettersTours==false){
+    //     alert1.style.display = 'block';
+    //     document.getElementById("inputTourName").classList.add("borderColorAlert");
+    // }
+    else if( onlyNumbersPrice==false ){
+        alert1.style.display = 'block';
         document.getElementById("inputPrice").classList.add("borderColorAlert");
     }
-    // else if(onlyLettersState==false){
-    //     alert3.style.display = 'block';
-    //     document.getElementById("inputState").classList.add("borderColorAlert");
-    // }
-    else if(onlyRating==false){
-        alert3.style.display = 'block';
+    else if( rating<0||rating>5 ){
+        alert2.style.display = 'block';
         document.getElementById("inputRating").classList.add("borderColorAlert");
     }
-    else if(onlyNumbersReviews==false){
+    else if( onlyNumbersReviews==false ){
         alert3.style.display = 'block';
         document.getElementById("inputReviews").classList.add("borderColorAlert");
     }
@@ -112,7 +117,11 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
         about : description,
         city : city,
         rating : rating ,
-        reviews_num : reviews ,
+        reviews : reviews ,
+        imageUrl1 : imageUrl1 ,
+        imageUrl2 : imageUrl1 ,
+        imageUrl3 : imageUrl1 ,
+        description : description
     }
 
     var listTours = tour;
@@ -143,6 +152,8 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     document.getElementsByTagName("input")[3].value="";
     document.getElementsByTagName("input")[4].value="";
     document.getElementsByTagName("input")[5].value="";
+    document.getElementsByTagName("input")[6].value="";
+    document.getElementsByTagName("input")[7].value="";
     document.getElementsByTagName("textarea")[0].value="";
 
     document.getElementsByTagName("input")[0].classList.remove("borderColorDanger","borderColorAlert");
@@ -152,6 +163,8 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     document.getElementsByTagName("input")[3].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("input")[4].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("input")[5].classList.remove("borderColorDanger","borderColorAlert");
+    document.getElementsByTagName("input")[6].classList.remove("borderColorDanger","borderColorAlert");
+    document.getElementsByTagName("input")[7].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("textarea")[0].classList.remove("borderColorDanger","borderColorAlert");
 
     Swal.fire({
