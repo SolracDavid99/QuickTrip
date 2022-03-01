@@ -26,18 +26,42 @@ function formulario(){
         }
     }
     else{
-        if (userName == "pau" && password == "123"){
+        if (userName == "SolracDavid99" && password == "123"){
+
+            sessionStorage.setItem('user',userName);
+            sessionStorage.setItem('adm',1);
+
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'Welcome',
+                title: 'Welcome ' + userName,
                 showConfirmButton: false,
-                timer: 1500
-            })
+                timer: 2000,
+                timerProgressBar: true
+            });
+
+            document.getElementsByTagName("input")[0].value = "";
+            document.getElementsByTagName("input")[1].value = "";
+
+            // window.location.href = '/html/home.html';
+        }else if(userName == "Carlos04" && password == "123"){
+
+            sessionStorage.setItem('user',userName);
+            sessionStorage.setItem('adm',0);
+
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Welcome ' + userName,
+                showConfirmButton: false,
+                timer: 2000,
+                timerProgressBar: true
+            });
             
             document.getElementsByTagName("input")[0].value = "";
             document.getElementsByTagName("input")[1].value = "";
             
+            // window.location.href = '/html/home.html';
         }
         else{
             document.getElementById("userInput").classList.add("borderColorDanger");
@@ -45,4 +69,8 @@ function formulario(){
             wrong.style.display = 'block';
         }
     }
+    
+    //if(sessionStorage.getItem('user') != "")window.location.href = '/html/home.html';
 }
+
+
