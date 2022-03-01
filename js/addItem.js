@@ -4,7 +4,7 @@ function agregarItem(){
 
     const regexNumber = /^[0-9]*$/
 
-    const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
+const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     
     var city = null;
     var tourName = document.getElementById("inputTourName").value;
