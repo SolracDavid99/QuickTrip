@@ -35,8 +35,6 @@ function agregarItem(){
     alert1.style.display = 'none';
     alert2.style.display = 'none';
     alert3.style.display = 'none';
-    alert4.style.display = 'none';
-    alert5.style.display = 'none';
 
     //test con regex
     //const onlyLettersTours = regexName.test(tourName);
@@ -83,11 +81,11 @@ function agregarItem(){
     //     document.getElementById("inputTourName").classList.add("borderColorAlert");
     // }
     else if( onlyNumbersPrice==false ){
-        alert2.style.display = 'block';
+        alert1.style.display = 'block';
         document.getElementById("inputPrice").classList.add("borderColorAlert");
     }
     else if( rating<0||rating>5 ){
-        alert3.style.display = 'block';
+        alert2.style.display = 'block';
         document.getElementById("inputRating").classList.add("borderColorAlert");
     }
     else if( onlyNumbersReviews==false ){
@@ -95,6 +93,7 @@ function agregarItem(){
         document.getElementById("inputReviews").classList.add("borderColorAlert");
     }
     else{
+
     var tour = {
         tourName : tourName,
         category : category,
@@ -117,6 +116,8 @@ function agregarItem(){
     document.getElementsByTagName("input")[3].value="";
     document.getElementsByTagName("input")[4].value="";
     document.getElementsByTagName("input")[5].value="";
+    document.getElementsByTagName("input")[6].value="";
+    document.getElementsByTagName("input")[7].value="";
     document.getElementsByTagName("textarea")[0].value="";
 
     document.getElementsByTagName("input")[0].classList.remove("borderColorDanger","borderColorAlert");
@@ -126,6 +127,8 @@ function agregarItem(){
     document.getElementsByTagName("input")[3].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("input")[4].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("input")[5].classList.remove("borderColorDanger","borderColorAlert");
+    document.getElementsByTagName("input")[6].classList.remove("borderColorDanger","borderColorAlert");
+    document.getElementsByTagName("input")[7].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("textarea")[0].classList.remove("borderColorDanger","borderColorAlert");
 
     Swal.fire({
