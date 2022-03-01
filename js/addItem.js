@@ -6,6 +6,7 @@ function agregarItem(){
 
     const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     
+    var city = null;
     var tourName = document.getElementById("inputTourName").value;
     var category = document.getElementById("formControlCategory").value;
     var price = document.getElementById("inputPrice").value;
@@ -89,18 +90,51 @@ function agregarItem(){
     }
     else{
 
+        /*
+        var tour = {
+            tourName : tourName,
+            category : category,
+            price : price ,
+            state : state , 
+            rating : rating ,
+            reviews : reviews ,
+            imageUrl : imageUrl ,
+            description : description
+        }
+        */
+
     var tour = {
-        tourName : tourName,
+        name : tourName,
+        location : state ,
         category : category,
+        image : imageUrl ,
         price : price ,
-        state : state , 
+        about : description,
+        city : city,
         rating : rating ,
-        reviews : reviews ,
-        imageUrl : imageUrl ,
-        description : description
+        reviews_num : reviews ,
     }
 
+    var listTours = tour;
+    console.log(listTours);
+
     sessionStorage.setItem("id",JSON.stringify(tour));
+
+    fetch("http://localhost:8080/api/tour/", {
+    method: 'POST', // or 'PUT'
+    headers: {
+    'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(listTours),
+})
+.then(response => response.text())
+.then(listTours => {
+    console.log('Success:', listTours);
+})
+.catch((error) => {
+    console.error('Error:', error);
+});
+
 
     document.getElementsByTagName("input")[0].value="";
     document.getElementsByTagName("select")[0].value="Gastronomic";
