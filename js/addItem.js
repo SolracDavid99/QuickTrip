@@ -16,7 +16,7 @@ const regexRating = /^[0-9]+[.]+[0-9]+[0-9]*$/
     var imageUrl = document.getElementById("inputImageUrl").value;
     var description = document.getElementById("textAreaDescription").value;
 
-    console.log(tourName,category,price,state,rating,reviews,imageUrl,description);
+    //console.log(tourName,category,price,state,rating,reviews,imageUrl,description);
 
     document.getElementsByTagName("input")[0].classList.remove("borderColorDanger","borderColorAlert");
     document.getElementsByTagName("select")[0].classList.remove("borderColorDanger","borderColorAlert");
