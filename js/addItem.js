@@ -95,33 +95,19 @@ function agregarItem(){
     }
     else{
 
-        /*
-        var tour = {
-            tourName : tourName,
-            category : category,
-            price : price ,
-            state : state , 
-            rating : rating ,
-            reviews : reviews ,
-            imageUrl : imageUrl ,
-            description : description
-        }
-        */
 
     var tour = {
         name : tourName,
         location : state ,
         category : category,
-        image : imageUrl ,
-        price : price ,
-        about : description,
-        city : city,
+        image : imageUrl1 ,
+        image_two : imageUrl2 ,
+        image_three : imageUrl3,
+        price : price,
+        about : description ,
+        city : city ,
         rating : rating ,
-        reviews : reviews ,
-        imageUrl1 : imageUrl1 ,
-        imageUrl2 : imageUrl1 ,
-        imageUrl3 : imageUrl1 ,
-        description : description
+        reviews_num : reviews 
     }
 
     var listTours = tour;
