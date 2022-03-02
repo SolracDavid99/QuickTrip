@@ -7,7 +7,6 @@ function buildImage () {
     .then(respuesta => respuesta.json())
     .then(tours => {
         var value = id();
-        value -= 1;
         console.log(value);
 
                 info += 
@@ -70,5 +69,4 @@ function buildImage () {
     function id(){
         var num =parseInt(sessionStorage.getItem('id'));
         return num;
-
     }

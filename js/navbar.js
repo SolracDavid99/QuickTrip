@@ -9,7 +9,7 @@ function buildNavBar() {
     if(user!="" && adm == 0){
         var navBar =     
     `
-    <nav class="navbar navbar-expand-lg navbar-light p-3 mb-5">
+    <nav class="navbar navbar-expand-lg navbar-light p-3 mb-5 bg-white rounded">
     <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo2.png">
         <img id="avion" src="../assets/nuevoavion.png">
         <div></div>
