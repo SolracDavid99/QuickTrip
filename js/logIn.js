@@ -1,6 +1,6 @@
 
 
-function formulario(){
+async function formulario(){
 
 
     var userName=document.getElementsByTagName("input")[0].value;
@@ -42,7 +42,7 @@ function formulario(){
 
             document.getElementsByTagName("input")[0].value = "";
             document.getElementsByTagName("input")[1].value = "";
-
+            await sleep(2000);
             // window.location.href = '/html/home.html';
         }else if(userName == "Carlos04" && password == "123"){
 
@@ -60,7 +60,7 @@ function formulario(){
             
             document.getElementsByTagName("input")[0].value = "";
             document.getElementsByTagName("input")[1].value = "";
-            
+            await sleep(2000);
             // window.location.href = '/html/home.html';
         }
         else{
@@ -70,7 +70,11 @@ function formulario(){
         }
     }
     
-    //if(sessionStorage.getItem('user') != "")window.location.href = '/html/home.html';
+    if(sessionStorage.getItem('user') != "")window.location.href = '/html/home.html';
 }
 
-
+function sleep(ms) {
+    return new Promise(
+        resolve => setTimeout(resolve, ms)
+    );
+}

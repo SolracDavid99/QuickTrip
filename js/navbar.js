@@ -139,7 +139,7 @@ function buildNavBar() {
 buildNavBar();
 
 
-function logOut(){
+async function logOut(){
     sessionStorage.setItem('user',"");
     sessionStorage.setItem('adm',0);
 
@@ -148,4 +148,21 @@ function logOut(){
 
     document.location.reload(true);
     window.location.href = '/html/home.html'
+
+    // Swal.fire({
+    //     position: 'center',
+    //     icon: 'success',
+    //     title: 'Goodbye ' + userName,
+    //     showConfirmButton: false,
+    //     timer: 2000,
+    //     timerProgressBar: true
+    // });
+    // await sleep(2000);
+
+}
+
+function sleep(ms) {
+    return new Promise(
+        resolve => setTimeout(resolve, ms)
+    );
 }
