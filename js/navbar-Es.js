@@ -2,11 +2,11 @@ function buildNavBar() {
     var navBar =     
     `
     <!-- Navegation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded">
-        <a class="navbar-brand" href="/html/home.html"><img id="logo" src="/assets/nuevologo.png">
-            <img id="avion" src="/assets/nuevoavion.png">
-            <div></div>
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light p-3 mb-5 bg-white rounded">
+    <a class="navbar-brand" href="home.html"><img id="logo" src="../assets/nuevologo2.png">
+        <img id="avion" src="../assets/nuevoavion.png">
+        <div></div>
+    </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
