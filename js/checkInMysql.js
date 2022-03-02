@@ -1,32 +1,31 @@
-
 var info='';
 buildImage();
 
-
 function buildImage () {
-    fetch('http://localhost:5000/api/tours')
+    fetch('http://localhost:8080/api/tour/')
     .then(respuesta => respuesta.json())
-    .then(tours => {
+    .then(tour => {
         var value = id();
+        //value -= 1;
         console.log(value);
 
-                info +=     
+                info += 
                 `
                 <div class="container-fluid d-flex justify-content-center align-items-center">
                 <div class="row">
                     <div class="col-md d-flex justify-content-center">
                         <div class="card.mx-auto">
-                            <img id="category" class="img-fluid" src="${tours[value].image}" alt="Card image cap">
+                            <img id="category" class="img-fluid" src="${tour[value].image}" alt="Card image cap">
                         </div>
                     </div>
                     <div class="col-md d-flex justify-content-center">
                         <div class="card.mx-auto">
-                            <img class="img-fluid" id="category" src="${tours[value].image_two}" alt="Card image cap">
+                            <img class="img-fluid" id="category" src="${tour[value].image_two}" alt="Card image cap">
                         </div>
                     </div>
                     <div class="col-md d-flex justify-content-center">
                         <div class="card.mx-auto">
-                            <img class="img-fluid" id="category" src="${tours[value].image_three}" alt="Card image cap">
+                            <img class="img-fluid" id="category" src="${tour[value].image_three}" alt="Card image cap">
                         </div>
                     </div>
                 </div>
@@ -34,20 +33,20 @@ function buildImage () {
             <div class="container-fluid" id="second-part">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1 class="text-justify" id="encabezado">${tours[value].name}</h1>
-                        <p id="encabezado">${tours[value].location} -  ${tours[value].category} experience</p>
-                        <p id="contenido" class="font-weight-bold" style="font-size: large;">${tours[value].price} $ MXN pp</p>
+                        <h1 class="text-justify" id="encabezado">${tour[value].name}</h1>
+                        <p id="encabezado">${tour[value].location} -  ${tour[value].category} experience</p>
+                        <p id="contenido" class="font-weight-bold" style="font-size: large;">${tour[value].price} $ MXN pp</p>
             
-                        <p id="contenido" class="font-weight-bold" style="font-size: large;">${tours[value].about}</p>
+                        <p id="contenido" class="font-weight-bold" style="font-size: large;">${tour[value].about}</p>
                         </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1" id="contenido">Guests</label>
-                                    <select class="form-control" name="guestValue" id="guestValue">
-                                        <option >1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
                                         <option>5</option>
                                     </select>
                                 </div>
@@ -70,8 +69,5 @@ function buildImage () {
     function id(){
         var num =parseInt(sessionStorage.getItem('id'));
         return num;
-    }
-
-    function setGuest(value){
 
     }

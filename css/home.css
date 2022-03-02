@@ -142,4 +142,6 @@
     width: 17.25rem;
     height: 23rem;
     border-radius:1rem;
+    position: relative;
+    flex: 1;
 }
