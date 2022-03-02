@@ -147,7 +147,7 @@ async function logOut(){
     adm = 0;
 
     document.location.reload(true);
-    window.location.href = '/html/home.html'
+    window.location.href = '../html/home.html'
 
     // Swal.fire({
     //     position: 'center',
