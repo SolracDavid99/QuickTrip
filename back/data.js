@@ -118,7 +118,7 @@ module.exports = {
     },
     {
       _id: '10',
-      name: 'Eat street food & exotic fruits at Sunday Market in the city',
+      name: 'Eat street food & exotic fruits',
       location: 'CDMX',
       category: 'Gastronomic',
       image: 'https://escuanto.mx/wp-content/uploads/2020/03/locatarios-mercados-cdmx-apoyados-seguro-850x560.jpg',

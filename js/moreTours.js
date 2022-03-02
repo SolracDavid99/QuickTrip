@@ -10,7 +10,7 @@ function buildCards () {
         var random = getRandomInt(0,tours.length)
         moreTours += 
             `
-                    <div class="col-md justify-content-center align-items-center">
+                    <div class="col-md-2 d-flex justify-content-center align-items-center">
                         <div class="card.mx.auto">
                             <a href="../html/checkIn.html" onclick="saveId(${random})" id="tourImage"><img id="tourImage" src="${tours[random].image}" alt="..." class="img-fluid"></a>
                             <div class="card-body">
