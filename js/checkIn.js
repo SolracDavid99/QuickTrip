@@ -2,6 +2,7 @@
 var info='';
 buildImage();
 
+
 function buildImage () {
     fetch('http://localhost:5000/api/tours')
     .then(respuesta => respuesta.json())
@@ -42,11 +43,11 @@ function buildImage () {
                             <div class="col-sm-3">
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1" id="contenido">Guests</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
+                                    <select class="form-control" name="guestValue" id="guestValue">
+                                        <option >1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
                                         <option>5</option>
                                     </select>
                                 </div>
@@ -69,4 +70,8 @@ function buildImage () {
     function id(){
         var num =parseInt(sessionStorage.getItem('id'));
         return num;
+    }
+
+    function setGuest(value){
+
     }

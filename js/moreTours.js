@@ -10,12 +10,12 @@ function buildCards () {
         var random = getRandomInt(0,tours.length)
         moreTours += 
             `
-                    <div class="col-md-2 justify-content-center align-items-center">
+                    <div class="col-md justify-content-center align-items-center">
                         <div class="card.mx.auto">
                             <a href="../html/checkIn.html" onclick="saveId(${random})" id="tourImage"><img id="tourImage" src="${tours[random].image}" alt="..." class="img-fluid"></a>
                             <div class="card-body">
-                                <p class="card-title text-center" id="tourName">${tours[random].name}</p>
-                                <p class="card-text text-center" id="aboutTour"> <b>From ${tours[random].price} MXN</b> p/p</p>
+                                <p class="card-title" id="tourName">${tours[random].name}</p>
+                                <p class="card-text" id="aboutTour"> <b>From ${tours[random].price} MXN</b> p/p</p>
                             </div>
                         </div>
                     </div>
