@@ -10,7 +10,7 @@ function buildTables() {
         tables += `<tr>
             <td scope="row">${tour[i].id}</td>
             <td>${tour[i].name}</td>
-            <td><button type="button" class="btn-primary btn-sm" onclick= "deleteTour(${tour[i].id})" id="contenido">Delete Item</button></td>
+            <td><button type="button" class="btn-danger btn-sm" onclick= "deleteTour(${tour[i].id})" id="contenido">Delete Item</button><button type="button" class="btn-primary btn-sm" onclick= "modifyTours(${tour[i].id})" id="contenido">Modify</button></td>
         </tr>`;
       } //for
         document.getElementById("tables").innerHTML = tables;
@@ -53,7 +53,12 @@ function deleteTour(idDelete) {
         window.location.href = window.location.href;
       })
 
-
     
 }
+
+function modifyTours(id){
+  window.location.href = '../html/modifyTour.html';
+}
+
+
 
