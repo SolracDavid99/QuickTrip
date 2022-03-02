@@ -21,15 +21,39 @@ function buildTables() {
 buildTables();
 
 function deleteTour(idDelete) {
-    fetch("http://localhost:8080/api/tour/" + idDelete, {
-    method: "DELETE",
-    headers: {
-        "Content-type": "application/json; charset=UTF-8",
-    },
-    })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
 
-    window.location.href = window.location.href;
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+
+            fetch("http://localhost:8080/api/tour/" + idDelete, {
+                method: "DELETE",
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8",
+                },
+                })
+                .then((response) => response.json())
+                .then((data) => console.log(data))
+                .catch((err) => console.log(err));
+
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+        }
+        window.location.href = window.location.href;
+      })
+
+
+    
 }
+
