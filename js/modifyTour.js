@@ -1,4 +1,33 @@
-function modifyItem(id){
+
+
+function autoComplete(){
+    
+    var table = "";
+    var autoCompleteId = id();
+
+    fetch('http://localhost:8080/api/tour/'+autoCompleteId)
+    
+    .then(respuesta => respuesta.json())
+    .then(tour => {
+
+        console.log(tour);
+        table = `<p>${tour.name}</p>`;
+
+    document.getElementById("table").innerHTML = table;
+
+})
+
+
+} autoComplete();
+
+
+
+function modifyItem(){
+
+
+    var modifyId = id();
+    console.log(modifyId);
+
     //var idt = id;
     const name = document.getElementById("inputTourName").value;
     const location = document.getElementById("inputState").value;
@@ -13,11 +42,10 @@ function modifyItem(id){
     const reviews_num = document.getElementById("inputReviews").value;
 
 
-
     // console.log("valor de x: "+x);
     // alert("valor de idt: "+idt);
 
-    fetch("http://localhost:8080/api/tour/"+"27"
+    fetch("http://localhost:8080/api/tour/"+modifyId
     +"?name=" + name 
     +"&location=" + location
     +"&category=" + category
@@ -41,4 +69,12 @@ function modifyItem(id){
 
 }
 
+function id(){
+    var num =parseInt(sessionStorage.getItem('modifyId'));
+    return num;
+}
 
+function idt(){
+    var num =parseInt(sessionStorage.getItem('namet'));
+    return num;
+}

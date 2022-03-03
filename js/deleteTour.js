@@ -56,9 +56,9 @@ function deleteTour(idDelete) {
     
 }
 
-function modifyTours(id){
+function modifyTours(value){
+  sessionStorage.setItem('modifyId',value);
+  console.log(value)
   window.location.href = '../html/modifyTour.html';
 }
-
-
 
