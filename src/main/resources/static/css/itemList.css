@@ -1,0 +1,31 @@
+#tourName{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+#tourImage{
+    width: 12rem;
+    height: 15rem;
+    border-radius:1rem;
+
+}
+#aboutTour{
+    font-family: 'Quicksand', sans-serif;
+}
+.card{
+    border: none;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+
+}
+button{
+    border: none;
+    background: none;
+}
+#cards{
+    text-align:center;
+    margin:0 auto;
+    /* Alinea todo el row en el centro */
+
+}

@@ -1,0 +1,65 @@
+#category{
+    width: 17.25rem;
+    height: 23rem;
+    border-radius:1rem;
+}
+
+#second-part {
+    /*width: 1235px;
+    height: 569px;*/
+    background: #F4E6D6;
+    border-radius: 30px;
+    /*display: flex;
+    align-items: center;*/
+}
+
+#commentBox{
+    border-radius: 1rem;
+}
+
+#submit{
+    border-radius: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.card{
+    border: none;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+
+}
+#tourName{
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+#tourImage{
+    width: 12rem;
+    height: 15rem;
+    border-radius:1rem;
+
+}
+#aboutTour{
+    font-family: 'Quicksand', sans-serif;
+}
+.card{
+    border: none;
+    background-color: #f8f9fb;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+button{
+    border: none;
+    background: none;
+}
+#cards{
+    text-align:center;
+    margin:0 auto;
+    /* Alinea todo el row en el centro */
+
+}
+#moreTours{
+    margin-top: 2rem;
+}
