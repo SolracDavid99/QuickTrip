@@ -26,6 +26,11 @@
 <!-- Navegation Bar -->
 <div id="navBar"></div>
 
+<!--THIRD PART-->
+<div class="container" id="">
+    <h1 class="text-justify" id="encabezado">My reservations </h1>
+</div>
+
 <!--CARDS-->
 <div id="info"></div>
 
@@ -54,37 +59,29 @@
     </div>
 </div>
 <br>
-<!--Add comment-->
-<div class="container-fluid">
-    <di class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-10">
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1" id="contenido" style="font-size: large;"> <b>Leave us a
-                            comment:</b></label>
-                    <textarea class="form-control" id="commentBox" rows="5"></textarea>
-                </div>
-            </form>
-            <div class="text-right">
-                <button class="btn btn-dark float-right" type="button" id="submit" data-toggle="modal" onclick="reserva()" data-target="#exampleModal" value=""><a href="../html/reservation.html">Reservation</a></button>
-            </div>
-        </div>
 
-        <!--divds del row y col md-->
+<!-- Tabla lista tours-->
+<div class="col-md-6 d-flex " >
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th scope="col">Reservation Id</th>
+            <th scope="col">Tour</th>
+            <th scope="col">Date</th>
+            <th scope="col">Guests</th>
+            <th scope="col">Total</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody id="tables">
+
+        </tbody>
+        </table>
+</div>
+        
 
 
-        <!--THIRD PART-->
-        <div class="container" id="">
-            <h1 class="text-justify" id="encabezado">More tours </h1>
-        </div>
 
-        <br><br>
-
-        <!-- Tour card structure-->
-        <div class="container-fluid">
-            <div class="row row justify-content-center" id="moreTours">
-            </div>
-        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -93,11 +90,12 @@
             integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
             crossorigin="anonymous"></script>
         <script src="../js/navbar.js"></script>
-        <!-- <script src="../js/checkin.js"></script> -->
-        <script src="../js/checkInMysql2.js"></script>
-        <!-- <script src="../js/moreTours.js"></script> -->
-        <script src="../js/moreToursMysql.js"></script>
 
+
+        <script src="../js/reservation.js"></script>
+
+        <!--Scripts para sweetAlert-->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         </body>
 

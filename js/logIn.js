@@ -26,7 +26,7 @@ async function formulario(){
         }
     }
     else{
-        if ((userName == "SolracDavid99" && password == "123")||(userName == "Salvador" && password == "1234")){
+        if ((userName == "SolracDavid99" && password == "123")||(userName == "Salvador" && password == "1234")||(userName == "Alonso" && password == "1234")||(userName == "Paulo" && password == "1234")||(userName == "Larisa" && password == "1234")||(userName == "Jazmin" && password == "1234")||(userName == "Ernesto" && password == "1234")||(userName == "Angel" && password == "1234")||(userName == "Sergio" && password == "1234")){
 
             sessionStorage.setItem('user',userName);
             sessionStorage.setItem('adm',1);
@@ -44,7 +44,7 @@ async function formulario(){
             document.getElementsByTagName("input")[1].value = "";
             await sleep(2000);
             // window.location.href = '/html/home.html';
-        }else if(userName == "Carlos04" && password == "123"){
+        }else if((userName == "Carlos04" && password == "123")||(userName == "usuario" && password == "1234")){
 
             sessionStorage.setItem('user',userName);
             sessionStorage.setItem('adm',0);

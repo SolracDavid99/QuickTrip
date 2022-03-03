@@ -5,9 +5,9 @@ function buildImage () {
     fetch('http://localhost:8080/api/tour/')
     .then(respuesta => respuesta.json())
     .then(tour => {
-        var value = id();
+        var val = id();
         //value -= 1;
-        console.log(value);
+        console.log(val);
 
                 info += 
                 `
@@ -15,17 +15,17 @@ function buildImage () {
                 <div class="row">
                     <div class="col-md d-flex justify-content-center">
                         <div class="card.mx-auto">
-                            <img id="category" class="img-fluid" src="${tour[value].image}" alt="Card image cap">
+                            <img id="category" class="img-fluid" src="${tour[val].image}" alt="Card image cap">
                         </div>
                     </div>
                     <div class="col-md d-flex justify-content-center">
                         <div class="card.mx-auto">
-                            <img class="img-fluid" id="category" src="${tour[value].image_two}" alt="Card image cap">
+                            <img class="img-fluid" id="category" src="${tour[val].image_two}" alt="Card image cap">
                         </div>
                     </div>
                     <div class="col-md d-flex justify-content-center">
                         <div class="card.mx-auto">
-                            <img class="img-fluid" id="category" src="${tour[value].image_three}" alt="Card image cap">
+                            <img class="img-fluid" id="category" src="${tour[val].image_three}" alt="Card image cap">
                         </div>
                     </div>
                 </div>
@@ -33,11 +33,11 @@ function buildImage () {
             <div class="container-fluid" id="second-part">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1 class="text-justify" id="encabezado">${tour[value].name}</h1>
-                        <p id="encabezado">${tour[value].location} -  ${tour[value].category} experience</p>
-                        <p id="contenido" class="font-weight-bold" style="font-size: large;">${tour[value].price} $ MXN pp</p>
+                        <h1 class="text-justify" id="encabezado" >${tour[val].name}</h1>
+                        <p id="encabezado" >${tour[val].location} -  ${tour[val].category} experience</p>
+                        <p id="contenido" class="font-weight-bold" style="font-size: large;"><label id="idprice">${tour[val].price} $ MXN pp</label></p>
             
-                        <p id="contenido" class="font-weight-bold" style="font-size: large;">${tour[value].about}</p>
+                        <p  id="contenido" class="font-weight-bold" style="font-size: large;">${tour[val].about}</p>
                         </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
@@ -53,7 +53,7 @@ function buildImage () {
                                 <div class="col-md-2">
                                     <label for="start">Start date:</label>
                                 
-                                    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                                    <input type="date" id="start" name="trip-start" value="2022-01-01" min="2018-01-01" max="2100-12-31">
                                 </div>
                     </div>
                 </div>
@@ -70,4 +70,48 @@ function buildImage () {
         var num =parseInt(sessionStorage.getItem('id'));
         return num;
 
+    }
+
+    function reserva(){
+
+        userLogged = sessionStorage.getItem('user');
+        
+        
+        alert(userLogged);
+        alert("Reservation added");
+
+
+    var num_reservations = document.getElementById("exampleFormControlSelect1").value;
+    var date = document.getElementById("start").value;
+    //var total_price = document.getElementsById("idprice").value;
+    // var user_id = document.getElementById("inputImageUrl3").value;
+    //var tour_id = tour[value].name;
+     
+    //alert(total_price);
+
+    var total = num_reservations * 200;
+    alert(total);
+
+        var reservation = {
+            num_reservations : num_reservations,
+            date : date ,
+            total_price : total ,
+            user_id : userLogged ,
+            tour_id : "cancun"
+        }
+
+        fetch("http://localhost:8080/api/reservation/", {
+            method: 'POST', // or 'PUT'
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(reservation),
+        })
+        .then(response => response.text())
+        .then(reservation => {
+            console.log('Success:', reservation);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     }

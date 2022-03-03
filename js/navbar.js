@@ -29,6 +29,9 @@ function buildNavBar() {
             <li class="nav-item">
                 <a class="nav-link text-black" href="../htmlES/homeES.html">ES/<b>EN</b></a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link text-black" href="../html/reservation.html">My experiences</a>
+            </li>
             <li>
             <a class="nav-link text-black">${user}</a>
             </li>
@@ -72,6 +75,9 @@ function buildNavBar() {
             </li>
             <li class="nav-item">
                 <a class="nav-link text-black" href="../htmlES/homeES.html">ES/<b>EN</b></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-black" href="./reservation.html">My experiences</a>
             </li>
             <li>
             <a class="nav-link text-black">${user}</a>
