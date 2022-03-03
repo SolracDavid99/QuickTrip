@@ -32,10 +32,10 @@
 	<form style="margin-left: 30%;">
 		<div class="form-row">
 			<div class="form-group col-md-8">
-				<label for=""><h1 id="titulo">Let's explore more places!</h1></label>
+				<label for=""><h1 id="titulo">Modify your experience!</h1></label>
 			</div>
 			<div class="form-group col-md-12">
-				<label for="inputEmail4" id="contenido">Tour name</label>
+				<label for="inputEmail4" id="contenido" >Tour name</label>
 				<input type="text" class="form-control" id="inputTourName" placeholder="Tour name">
 			</div>
 		</div>
@@ -87,10 +87,8 @@
 			<label for="DescriptionInput" id="contenido">Description:</label>
 			<textarea class="form-control" id="textAreaDescription" rows="4" placeholder="What's the description of the tour?"></textarea>
 		</div>	
-		<button type="button" class="btn btn-primary" onclick= "agregarItem()" id="contenido">Submit</button>
-		<br><br>
-		<a href="../html/deleteTour.html">
-		<button type="button" class="btn-secondary btn-lg" onclick= "modifyItem()" id="contenido">Delete Item</button>
+		<a href="../html/modifyTour.html">
+		<button type="button" class="btn-secondary btn-lg" onclick= "modifyItem()" id="contenido">Modify Item</button>
 	    </a>
 
 		<div class="form-group message col-md-6">
@@ -118,12 +116,9 @@
 
 	<script src="../js/addItem.js"></script>
 	<script src="../js/navbar.js"></script>
+    <script src="../js/modifyTour.js"></script>
 
-	<!--Scripts para sweetAlert-->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	
 </body>
 
 </html>

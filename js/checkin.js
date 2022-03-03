@@ -75,3 +75,11 @@ function buildImage () {
     function setGuest(value){
 
     }
+function date(){
+    var today = new Date();
+    var dd = today.getDate()+1;
+    var mm = today.getMonth(); //January is 0 so need to add 1 to make it 1!
+    var yyyy = today.getFullYear();
+    today = yyyy+'-'+mm+'-'+dd;
+    document.getElementById("datefield").setAttribute("min", today);
+}

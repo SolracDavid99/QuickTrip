@@ -26,7 +26,7 @@ async function formulario(){
         }
     }
     else{
-        if (userName == "SolracDavid99" && password == "123"){
+        if ((userName == "SolracDavid99" && password == "123")||(userName == "Salvador" && password == "1234")){
 
             sessionStorage.setItem('user',userName);
             sessionStorage.setItem('adm',1);
@@ -70,7 +70,7 @@ async function formulario(){
         }
     }
     
-    if(sessionStorage.getItem('user') != "")window.location.href = '/html/home.html';
+    if(sessionStorage.getItem('user') != "")window.location.href = '../html/home.html';
 }
 
 function sleep(ms) {
