@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="35x35" href="../assets/favicon.png">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/signUp.css">
+
+    <!-- Fuente -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap"
+    rel="stylesheet">
+
+        <!-- Navbar -->
+        <link rel="stylesheet" href="../css/navbar.css">
+        <!-- Color Body -->
+        <link rel="stylesheet" href="../css/body.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <!-- Navegation Bar -->
+    <div id="navBar"></div>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-6" id="first-part">
+            <p>QuickTrip.</p>
+            <p>El lugar perfecto para seleccionar tus experiencias favoritas!</p>
+            <img src="/assets/signup.png" alt="">
+        </div>
+        <div class="col-md-6" id="second-part">
+            <form>
+                <div id="text-signUp">
+                    <p>Regístrate en QuickTrip.</p>
+                    <p style="font-size: small; font-family: 'Quicksand'">
+                        ¿Ya eres usuario?</p>
+                </div>
+                <div id="form-group">
+                    <label for="exampleInputFullName">Nombre completo</label>
+                    <input type="fullName" class="form-control" id="exampleInputFullName" aria-describedby="fullNameHelp">
+                    <small id="fullNameHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPhone">Teléfono</label>
+                    <input type="phone" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp">
+                    <small id="phoneHelp" class="form-text text-muted"></small>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nombre de usuario</label>
+                  <input type="email" class="form-control" id="exampleInputUserName" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información con nadie más.</small>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="exampleConfirmPassword">Confirma tu contraseña</label>
+                  <input type="password" class="form-control" id="exampleConfirmPassword">
+                </div>
+              </form>
+              <button class="btn btn-primary" onclick="signUp()">Crea una cuenta</button>
+
+              <div class="message">
+                <div class="success" id="success"> ¡Gracias por tu registro! Estas un paso más cerca de tu próxima aventura.
+
+                </div>
+                <div class="danger" id="danger">Ha dejado un campo obligatorio en blanco.</div>
+                <div class="alerts" id="alert1"> Este campo no puede tener números.</div>
+                <div class="alerts" id="alert2"> ¡Algo esta mal! Por favor revise su correo electrónico.</div>
+                <div class="alerts" id="alert3"> Este campo es para tu número de teléfono, no puede contener letras.</div>
+                <div class="alerts" id="alert4"> Este nombre de usuario ya existe.</div>
+                <div class="alerts" id="alert5"> Las contraseñas no coinciden, verificalo.</div>
+
+            </div>    
+        </div>
+    </div>
+    </div>
+
+    <script src="../js/navbar.js"></script>
+    <script src="/js/signUpForm.js"></script>
+
+
+</body>
+</html>

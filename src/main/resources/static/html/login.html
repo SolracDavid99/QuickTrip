@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="35x35" href="../assets/favicon.png">
+    <title>Log in</title>
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contactUs.css">
+
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- Navbar -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <!-- Color Body -->
+    <link rel="stylesheet" href="../css/body.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    
+</head>
+<body>
+        <!-- Navegation Bar -->
+        <div id="navBar"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6" id="first-part">
+            <p>QuickTrip.</p>
+            <p>The perfect place to book your favorite experiences!</p>
+            <img src="/assets/signup.png" alt="">
+        </div>
+        <div class="col-md-4 justify-content-left">
+            <h2 class= "titulo">Log In</h2>
+            <br>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="userInput" placeholder="User Name">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                    <!-- <small id="emailHelp" class="form-text text-muted">name@example.com</small>  -->
+                </div>
+                <!-- <div class="form-group">
+                    <input type="text" class="form-control" id="PhoneInput" placeholder="Phone (Optional)">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="CommentsTextArea" rows="3" placeholder="Tell us your comments."></textarea>
+                </div> -->
+                </form>
+                <button class="btn btn-primary float-left" onclick="formulario()">Log in</button>
+
+                <div class="message">
+                    </div>
+                    <div class="danger" id="danger">
+                        You have left a required field blank, please check it out.
+                    </div>
+                    <div class="wrong" id="wrong">
+                        Wrong user name or password
+                    </div>
+
+                </div>    
+                
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+crossorigin="anonymous"></script>
+
+<script src="../js/logIn.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="/js/mail.js"></script>
+<script src="../js/navbar.js"></script>
+
+</body>
+</html>

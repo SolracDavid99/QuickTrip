@@ -1,0 +1,30 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node back/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolracDavid99/QuickTrip.git"
+  },
+  "author": "Minions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SolracDavid99/QuickTrip/issues"
+  },
+  "homepage": "https://github.com/SolracDavid99/QuickTrip#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "sweetalert2": "^11.3.10"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+
+}

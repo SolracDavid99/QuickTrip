@@ -1,0 +1,61 @@
+#first-part {
+    background-color: #F4E6D6;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    text-align: left;
+}
+
+#second-part {
+    background-color: #F5F1ED;
+    border-radius: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    font-family: 'Quicksand'
+}
+
+#text-signUp {
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.5rem;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+}
+
+.success{
+    font-size: 1.3rem;
+    color: green;  
+    display: none;
+}
+
+.danger{
+    font-size: 1.3rem;
+    color: red;
+    display: none;
+}
+
+.alerts{
+    font-size: 1.3rem;
+    color: orange;
+    display: none;
+}
+
+.borderColorDanger {
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+}
+
+.borderColorAlert{
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px;
+}
