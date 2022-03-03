@@ -1,0 +1,77 @@
+#logo{
+    width: 10rem;
+}
+#avion {
+    width: 3.5rem;
+    animation-name: volar;
+        animation-duration: 3s;
+        position: absolute;
+        top: 11.5px;
+        left: 175px;
+}
+@keyframes volar {
+    5% {transform: translate(10px, 5px);}
+    10% {transform: translate(20px, 10px);}
+    15% {transform: translate(30px, 12px);}
+    20% {transform: translate(40px, 15px);}
+    25% {transform: translate(50px, 15px);}
+    30% {transform: translate(70px, 12px);}
+    35% {transform: translate(80px, 10px);}
+    40% {transform: translate(90px, 5px);}
+    45% {transform: translate(100px, 0px);}
+    50% {transform: translate(120px, -5px);}
+    55% {transform: translate(130px, -10px);}
+    60% {transform: translate(140px, -20px);}
+    65% {transform: translate(160px, -30px);}
+    70% {transform: translate(170px, -40px);}
+    75% {transform: translate(190px, -60Ppx);}
+    80% {transform: translate(210px, -70px);}
+    85% {transform: translate(220px, -90px);}
+    90% {transform: translate(-260px, -200px);}
+    95% {transform: translate(-130px, -100px);}
+    96% {transform: translate(-80px, -50px);}
+    97% {transform: translate(-40px, -10px);}
+    100% {transform: translate(0px, 0px);}
+}
+#login{
+    width: 1.7rem;
+}
+.dropdown-menu {
+    right: 0;
+    left: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+body{
+    /* background-color: whitesmoke; */
+    background-color: #f8f9fb;
+}
+
+#first-part {
+    background-color: #F4E6D6;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    text-align: left;
+}
+
+#second-part {
+    background-color: #F5F1ED;
+    border-radius: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    font-family: 'Quicksand'
+}
+
+#text-signUp {
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+}
+.wrong{
+    font-size: 1.3rem;
+    color: red;
+    display: none;
+}

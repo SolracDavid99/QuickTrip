@@ -18,7 +18,7 @@
 }
 
 #submit{
-    border-radius: 1.2rem;
+    border-radius: 1rem;
     font-family: 'Quicksand', sans-serif;
     
 }
@@ -62,8 +62,4 @@ button{
 }
 #moreTours{
     margin-top: 2rem;
-}
-
-#pay{
-    border-radius: 1rem;
 }
